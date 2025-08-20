@@ -38,6 +38,29 @@ Hệ thống được thiết kế và phát triển theo kiến trúc RESTful A
 -	Cơ sở dữ liệu: MySQL
 
 
+> ### **Cách hoạt động của các tính năng:**
+#### - Mô tả cách hoạt động tổng quát:
+  <img width="699" height="408" alt="image" src="https://github.com/user-attachments/assets/3efc5a77-9584-45e6-ab5b-afc11da5fa4b" />
+
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi người dùng tương tác và phát sinh Actions, Redux sẽ thông qua dispatch (gửi đi) để kích hoạt action tương ứng. Action này sẽ được reducer xử lý, cập nhật lại store, và giao diện được cập nhật theo trạng thái mới.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redux Thunk là một middleware (phần mềm trung gian) mở rộng cho Redux, cho phép xử lý các hành động bất đồng bộ như gọi API. Thay vì trả về một object thông thường, Redux Thunk cho phép action trả về là một hàm. Middleware này sẽ “chặn” action dạng hàm, thực thi logic bất đồng bộ bên trong (ví dụ: axios.get), rồi sau đó mới dispatch một action thông thường đến reducer khi có kết quả. Nhờ đó, các component có thể xử lý luồng dữ liệu bất đồng bộ một cách mạch lạc và hiệu quả hơn
+
+#### - Ví dụ về Cài đặt tính năng **tạo đơn đặt bàn** ở frontend và backend:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cấu trúc thư mục cần thiết tại backend bao gồm:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/ apis/  reservations.api.js  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cấu trúc thư mục cần thiết tại frontend bao gồm:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions/ ReservationActions.js  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pages/ Client/ Order.js  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reducers/ ReservationReducers.js  
+
+#### - Giải thích
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Actions: Các "tín hiệu" cho biết cần thay đổi dữ liệu gì (Thêm, Xóa, Cập Nhật,...)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Reducers: Các hàm xử lý **Actions** và cập nhật lại trạng thái mới.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Pages: Trang giao diện để thực hiện các **Actions** và **hiển thị các thông báo trạng thái** khi đã cập nhật thành công.
+
+
 ## Presenting some features:
 ### 1. Admin - Ví dụ mẫu 4 trang nhỏ 
 #### Giao diện trang Thống Kê
