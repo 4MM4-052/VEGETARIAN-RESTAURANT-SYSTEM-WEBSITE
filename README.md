@@ -1,5 +1,5 @@
 # VEGETARIAN-RESTAURANT-SYSTEM-WEBSITE
-Dự án Huong Sen Restaurant là một website hiện đại được phát triển bằng React.js và sử dụng Material UI để xây dựng giao diện người dùng. Ứng dụng tích hợp Redux và Redux Thunk để quản lý trạng thái toàn cục, đồng thời sử dụng thư viện Axios để kết nối với API backend.
+Hệ thống được thiết kế và phát triển theo kiến trúc RESTful API, sử dụng công nghệ NodeJS cho Backend nhằm xử lý hiệu quả các yêu cầu như đặt bàn, gọi món, quản lý đơn hàng và thanh toán trực tuyến. Frontend được xây dựng bằng ReactJS, mang lại giao diện trực quan, thân thiện và dễ sử dụng. Dữ liệu được lưu trữ bằng MySQL, đảm bảo việc quản lý thông tin ổn định, chính xác và đáng tin cậy.
 
 > ### **Key Features:**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **1. User**
