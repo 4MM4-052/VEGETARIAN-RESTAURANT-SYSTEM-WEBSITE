@@ -11,6 +11,8 @@ Hệ thống được thiết kế và phát triển theo kiến trúc RESTful A
 -	**Chọn món ăn & thanh toán cọc qua ví MoMo** sau khi đặt bàn thành công.
 -	**Theo dõi và quản lý các đơn hàng** đã đặt, xem chi tiết trạng thái và lịch sử.
 -	**Cập nhật và quản lý hồ sơ cá nhân** (tên, số điện thoại, email, ảnh đại diện,…)
+-	**Chat trực tiếp với chatbot** của nhà hàng để giải đáp các thắc mắc
+-	**Đánh giá phản hồi** về chất lượng món ăn, không gian cũng như phong cách phục vụ của nhà hàng
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **2. Admin**
 ##### -	Thêm / Sửa / Xoá / Cập nhật các nội dung như:
@@ -30,6 +32,8 @@ Hệ thống được thiết kế và phát triển theo kiến trúc RESTful A
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Số lượng danh mục
 -	Thống kê hóa đơn và phân loại theo từng trạng thái mỗi tháng.
 -	Thống kê doanh thu theo từng tháng, từng năm
+-	Thống kê phân loại đánh giá của khách hàng
+-	Trích xuất cụm từ nổi bật & sinh gợi ý cải thiện trong từng phản hồi đánh giá của khách hàng 
 
 
 > ### **Technologies Used::**
