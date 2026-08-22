@@ -1,118 +1,176 @@
-# VEGETARIAN-RESTAURANT-SYSTEM-WEBSITE
-Hệ thống được thiết kế và phát triển theo kiến trúc RESTful API, sử dụng công nghệ NodeJS cho Backend nhằm xử lý hiệu quả các yêu cầu như đặt bàn, gọi món, quản lý đơn hàng và thanh toán trực tuyến. Frontend được xây dựng bằng ReactJS, mang lại giao diện trực quan, thân thiện và dễ sử dụng. Dữ liệu được lưu trữ bằng MySQL, đảm bảo việc quản lý thông tin ổn định, chính xác và đáng tin cậy.
+# Thông Tin Sinh Viên
+### Họ Tên: Trần Trương Ngọc Uyển
+### MSSV: B2207576
+### Đồ án niên luận ngành Khoa Học Máy Tính
 
-> ### **Key Features:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **1. User**
--	Chức năng **đăng nhập, đăng ký, đăng xuất**
--	**Tích hợp bản đồ Google Map** để hỗ trợ khách tìm đường đến nhà hàng
--	**Gửi Mail** liên hệ với nhà hàng nếu có vấn đề hay thắc mắc cần hỗ trợ giải đáp 
--	**Bình luận** dưới các bài viết để tăng tính tương tác
--	**Đặt bàn trực tuyến**
--	**Chọn món ăn & thanh toán cọc qua ví MoMo** sau khi đặt bàn thành công.
--	**Theo dõi và quản lý các đơn hàng** đã đặt, xem chi tiết trạng thái và lịch sử.
--	**Cập nhật và quản lý hồ sơ cá nhân** (tên, số điện thoại, email, ảnh đại diện,…)
--	**Chat trực tiếp với chatbot** của nhà hàng để giải đáp các thắc mắc
--	**Đánh giá phản hồi** về chất lượng món ăn, không gian cũng như phong cách phục vụ của nhà hàng
+# 🌱 VEGETARIAN RESTAURANT SYSTEM WEBSITE
+## Website đặt chỗ nhà hàng chay tích hợp Chatbot AI và hệ thống phân tích đánh giá khách hàng
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **2. Admin**
-##### -	Thêm / Sửa / Xoá / Cập nhật các nội dung như:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Món ăn
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Bài viết - blog
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Chương trình khuyến mãi
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Tài khoản người dùng
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Bàn ăn 
-##### -	Phân quyền vai trò người dùng (Admin, nhân viên viết bài, nhân viên bếp, nhân viên sự kiện …)
-##### -	Quản lý đặt bàn
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Theo dõi & duyệt trạng thái đơn đặt
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Theo dõi trạng thái bàn: 
-##### -	Quản lý báo cáo tổng hợp  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Số lượng tài khoản
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Số lượng bài viết
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Số lượng món ăn
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Số lượng danh mục
--	Thống kê hóa đơn và phân loại theo từng trạng thái mỗi tháng.
--	Thống kê doanh thu theo từng tháng, từng năm
--	Thống kê phân loại đánh giá của khách hàng
--	Trích xuất cụm từ nổi bật & sinh gợi ý cải thiện trong từng phản hồi đánh giá của khách hàng 
+Hệ thống được xây dựng nhằm hỗ trợ khách hàng trong quá trình tìm kiếm thông tin, đặt chỗ và tương tác trực tuyến với nhà hàng chay thông qua **AI Chatbot**. 
+
+Bên cạnh đó, hệ thống ứng dụng các kỹ thuật **Natural Language Processing (NLP)** và **Machine Learning** để tự động phân tích đánh giá khách hàng, dự đoán mức độ hài lòng, trích xuất các yếu tố ảnh hưởng đến trải nghiệm và đưa ra đề xuất cải thiện dịch vụ.
+
+Hệ thống được xây dựng theo kiến trúc **RESTful API**, kết hợp giữa **FastAPI Backend**, **Rasa NLU Chatbot**, **PhoBERT Feature Extraction** và các mô hình học máy nhằm tạo ra một nền tảng nhà hàng thông minh.
 
 
-> ### **Technologies Used::**
--	Frontend: ReactJS, HTML, CSS, JavaScript
--	Backend: NodeJS, Express
--	Cơ sở dữ liệu: MySQL
+## 🎥 Demo
+
+| Chức năng | Liên kết |
+|-----------|----------|
+| 🤖 Chatbot AI hỗ trợ khách hàng | LINK_VIDEO_CHATBOT |
+| ⭐ Phân loại đánh giá khách hàng | LINK_VIDEO_REVIEW_ANALYSIS |
+| 🏠 Website đặt chỗ nhà hàng | LINK_VIDEO_WEBSITE |
+| ⚙️ Trang quản trị hệ thống | LINK_VIDEO_ADMIN |
 
 
-> ### **Cách hoạt động của các tính năng:**
-#### - Mô tả cách hoạt động tổng quát:
-  <img width="699" height="408" alt="image" src="https://github.com/user-attachments/assets/3efc5a77-9584-45e6-ab5b-afc11da5fa4b" />
+## 🛠 Công nghệ sử dụng
 
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi người dùng tương tác và phát sinh Actions, Redux sẽ thông qua dispatch (gửi đi) để kích hoạt action tương ứng. Action này sẽ được reducer xử lý, cập nhật lại store, và giao diện được cập nhật theo trạng thái mới.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redux Thunk là một middleware (phần mềm trung gian) mở rộng cho Redux, cho phép xử lý các hành động bất đồng bộ như gọi API. Thay vì trả về một object thông thường, Redux Thunk cho phép action trả về là một hàm. Middleware này sẽ “chặn” action dạng hàm, thực thi logic bất đồng bộ bên trong (ví dụ: axios.get), rồi sau đó mới dispatch một action thông thường đến reducer khi có kết quả. Nhờ đó, các component có thể xử lý luồng dữ liệu bất đồng bộ một cách mạch lạc và hiệu quả hơn
-
-#### - Ví dụ về Cài đặt tính năng **tạo đơn đặt bàn** ở frontend và backend:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cấu trúc thư mục cần thiết tại backend bao gồm:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/ apis/  reservations.api.js  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Cấu trúc thư mục cần thiết tại frontend bao gồm:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions/ ReservationActions.js  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pages/ Client/ Order.js  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reducers/ ReservationReducers.js  
-
-#### - Giải thích
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Actions: Các "tín hiệu" cho biết cần thay đổi dữ liệu gì (Thêm, Xóa, Cập Nhật,...)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Reducers: Các hàm xử lý **Actions** và cập nhật lại trạng thái mới.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Pages: Trang giao diện để thực hiện các **Actions** và **hiển thị các thông báo trạng thái** khi đã cập nhật thành công.
+| Thành phần | Công nghệ |
+|------------|-----------|
+| Backend | Python, FastAPI RESTful API |
+| Database | MySQL |
+| Conversational AI | Rasa NLU |
+| NLP | PhoBERT-base |
+| Machine Learning | SVM, Random Forest, Logistic Regression |
+| Text Processing | Tokenization, Layer-wise Pooling, Sentence Embedding |
 
 
-## Presenting some features:
-### 1. Admin - Ví dụ mẫu 4 trang nhỏ 
-#### Giao diện trang Thống Kê
-  <img width="853" height="367" alt="image" src="https://github.com/user-attachments/assets/f393aef0-48f5-425f-a64d-17497af58ea5" />
+## ✨ Chức năng chính
 
- 
-#### Giao diện trang Món Ăn
-  <img width="931" height="549" alt="image" src="https://github.com/user-attachments/assets/f30f9a41-dac8-42d2-b528-ae79abd213dc" />
+- Đặt chỗ trực tuyến tại nhà hàng chay.
+- Tra cứu thông tin món ăn và thực đơn.
+- Chatbot AI hỗ trợ khách hàng 24/7.
+- Nhận diện ý định người dùng và trích xuất thông tin trong hội thoại.
+- Phân tích đánh giá khách hàng tự động.
+- Phân loại cảm xúc: Tiêu cực / Trung lập / Tích cực.
+- Dự đoán mức đánh giá từ 1 đến 5 sao.
+- Trích xuất các cụm từ quan trọng ảnh hưởng đến trải nghiệm khách hàng.
+- Sinh đề xuất cải thiện dịch vụ dựa trên phản hồi thực tế.
+
+# 🧠 Xây dựng hệ thống phân tích đánh giá khách hàng
+
+### 1. Kiến trúc tổng thể
+
+Hệ thống được xây dựng theo mô hình Pipeline gồm ba giai đoạn chính:
+
+- Tiền xử lý dữ liệu văn bản.
+- Trích xuất đặc trưng bằng PhoBERT.
+- Huấn luyện mô hình Machine Learning và sinh kết quả phân tích.
+
+### Pipeline hệ thống
+<img width="899" height="340" alt="image" src="https://github.com/user-attachments/assets/b4f229d5-1f25-46ec-b8c5-c52786ea613f" />  
+
+### 2. Trích xuất đặc trưng văn bản với PhoBERT
+
+Hệ thống sử dụng phương pháp **Transfer Learning** với mô hình **PhoBERT-base** nhằm chuyển đổi văn bản đánh giá thành các vector biểu diễn giàu ngữ nghĩa.
+
+Quy trình thực hiện:
+
+- Tokenization bằng PhoBERT Tokenizer.
+- Ánh xạ token thành vector embedding 768 chiều.
+- Trích xuất đặc trưng từ các tầng Encoder cuối.
+- Áp dụng Mean Pooling để tạo Sentence Embedding.
+- Sử dụng vector đặc trưng làm đầu vào cho các mô hình phân loại.
+
+<img width="749" height="691" alt="image" src="https://github.com/user-attachments/assets/867a6234-a6f3-4784-99e6-1fa1908917b4" />
+
+### 3. Phân loại cảm xúc theo cấp bậc
+
+Để tối ưu độ chính xác và giảm sự nhầm lẫn giữa các mức đánh giá có đặc điểm tương đồng, hệ thống áp dụng phương pháp phân loại hai giai đoạn:
+#### Giai đoạn 1: Phân loại cảm xúc
+- Tiêu cực
+- Trung lập
+- Tích cực
+#### Giai đoạn 2: Phân loại mức độ đánh giá
+- 1-2 sao: Không hài lòng
+- 3 sao: Bình thường
+- 4-5 sao: Hài lòng
+  
+<img width="725" height="619" alt="image" src="https://github.com/user-attachments/assets/c6778339-1106-4371-b2ec-d93016dcb6c7" />
+
+### 4. Trích xuất cụm từ đặc trưng và đề xuất cải thiện
+
+Sau khi dự đoán mức độ hài lòng, hệ thống tiếp tục phân tích nội dung đánh giá để tìm ra các yếu tố ảnh hưởng đến trải nghiệm khách hàng.
+Quy trình:  
+Hệ thống gồm hai thành phần chính:
+- **Salient Phrase Extraction**
+  - Xác định các cụm từ quan trọng ảnh hưởng đến kết quả dự đoán.
+- **Improvement Recommendation**
+  - Ánh xạ cụm từ đặc trưng sang các giải pháp cải thiện dịch vụ.
+
+<img width="947" height="850" alt="image" src="https://github.com/user-attachments/assets/af25e79b-6215-4e71-97b8-646f8bf79e5e" />  
+
+# 🤖 Xây dựng Chatbot AI với Rasa NLU
+
+## Kiến trúc chatbot
+
+Chatbot được phát triển dựa trên nền tảng **Rasa NLU**, cho phép xử lý hội thoại bằng ngôn ngữ tự nhiên.
+
+Quy trình xây dựng:  
+<img width="876" height="507" alt="image" src="https://github.com/user-attachments/assets/d53aea83-0697-45c4-b798-3446443f0bd9" />  
+
+## Các thành phần chatbot
+
+### Intent Recognition
+Xác định mục đích của khách hàng:
+- Hỏi thông tin món ăn.
+- Tìm kiếm thực đơn.
+- Hỏi chính sách nhà hàng.
+- Đặt món.
+- Đặt bàn.
+
+### Entity Extraction
+Trích xuất thông tin quan trọng:
+- Tên món ăn.
+- Khoảng giá.
+- Loại món.
+- Thông tin đặt bàn.
+
+### Dialogue Management
+Xây dựng hội thoại bằng:
+- Rule-based Conversation.
+- Story-based Conversation.
+
+### Action Processing
+Chatbot hỗ trợ ba loại hành động:
+- Default Actions.
+- Utter Actions.
+- Custom Actions.
+
+# 📈 Kết quả thực nghiệm
+### Phân loại đánh giá  
+| Mô hình | Độ chính xác |
+|---------|-------------:|
+| SVM - Sentiment Classification | **96,38%** |
+| Random Forest - Negative Reviews (1-2 sao) | **94,66%** |
+| Logistic Regression - Positive Reviews (4-5 sao) | **95,09%** |
+
+### Chatbot
+Độ chính xác theo Accuracy  
+<img width="670" height="325" alt="image" src="https://github.com/user-attachments/assets/4e968adf-3264-45e8-96de-eb847ad0796c" />  
+
+Độ chính xác theo F1-score    
+<img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/2368d353-5cf1-4407-972d-64e0b8da4c79" />  
+
+Hiệu suất tổng thể mô hình  
+<img width="667" height="427" alt="image" src="https://github.com/user-attachments/assets/17691a5f-815d-46dc-9deb-ddeb19c328e0" />
 
 
-#### Giao diện trang Bàn Ăn
-  <img width="951" height="427" alt="image" src="https://github.com/user-attachments/assets/e54b6cca-8663-46bf-8e97-1b171d6e12cf" />
 
-
-#### Giao diện trang Đơn Đặt Bàn
-  <img width="944" height="498" alt="image" src="https://github.com/user-attachments/assets/ea3905a2-8ea3-4bb3-8147-f4a72222578c" />
-
-
-
-
-### 2. User - Ví dụ mẫu 1 số trang nhỏ
-#### Giao diện trang Trang Chủ
-  <img width="862" height="472" alt="image" src="https://github.com/user-attachments/assets/e118200b-033b-4f75-aaa6-f81ec5e49294" />
-
-
-#### Giao diện trang Menu Nhà Hàng - Chi Tiết Món Ăn
-  <img width="857" height="445" alt="image" src="https://github.com/user-attachments/assets/1f5d5549-4e03-42e3-9ca5-a0b674007d30" />
-
-  <img width="854" height="395" alt="image" src="https://github.com/user-attachments/assets/ec31f4cc-9d7d-4ade-b205-b79bf3954198" />
-
-
-#### Giao diện trang Bài Viết - Bình Luận
-  <img width="837" height="425" alt="image" src="https://github.com/user-attachments/assets/3faa9620-a035-47d0-8a68-6e0a92f4817b" />
-
-  <img width="803" height="250" alt="image" src="https://github.com/user-attachments/assets/8578c209-3f7e-4a98-a8e9-d79c8258d0f4" />
+# 🌟 Điểm nổi bật của dự án
+- Kết hợp **Conversational AI** và **Sentiment Analysis** trong cùng một hệ thống.
+- Ứng dụng **PhoBERT** để khai thác đặc trưng ngữ nghĩa tiếng Việt.
+- Phân tích không chỉ mức độ hài lòng mà còn nguyên nhân ảnh hưởng đến trải nghiệm khách hàng.
+- Tự động sinh đề xuất cải thiện dịch vụ dựa trên dữ liệu đánh giá.
+- Xây dựng nền tảng nhà hàng chay thông minh hỗ trợ khách hàng và doanh nghiệp.
 
 
 
-#### Giao diện trang Địa chỉ - Gửi Mail
-  <img width="855" height="426" alt="image" src="https://github.com/user-attachments/assets/b3849d53-93be-48dd-9c48-a7a9e9fdb1c3" />
 
 
-#### Giao diện trang Đặt Bàn - Thanh Toán
-  <img width="889" height="391" alt="image" src="https://github.com/user-attachments/assets/3421ebca-66a5-4ba2-bb48-39a4fcd4c0a7" />
 
-  <img width="896" height="438" alt="image" src="https://github.com/user-attachments/assets/80ada498-c1fb-4e3d-9f57-f71113119d96" />
 
-  <img width="915" height="523" alt="image" src="https://github.com/user-attachments/assets/66c86096-07fd-46af-a7d5-7fa459d3f4ce" />
 
-  <img width="839" height="392" alt="image" src="https://github.com/user-attachments/assets/9c50f3ea-e35c-4972-a69c-1365dcf8d8f3" />
+
+
 
