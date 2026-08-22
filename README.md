@@ -17,10 +17,10 @@ Hệ thống được xây dựng theo kiến trúc **RESTful API**, kết hợp
 
 | Chức năng | Liên kết |
 |-----------|----------|
-| 🤖 Chatbot AI hỗ trợ khách hàng | LINK_VIDEO_CHATBOT |
-| ⭐ Phân loại đánh giá khách hàng | LINK_VIDEO_REVIEW_ANALYSIS |
-| 🏠 Website đặt chỗ nhà hàng | LINK_VIDEO_WEBSITE |
-| ⚙️ Trang quản trị hệ thống | LINK_VIDEO_ADMIN |
+| 🤖 Chatbot AI hỗ trợ khách hàng | https://drive.google.com/file/d/1LVpqP2uYXjG9FVpJrQNUkF42ssD8_qBZ/view?usp=drive_link |
+| ⭐ Phân loại đánh giá khách hàng | https://drive.google.com/file/d/1TWg0rCa2xee1j0QZgR6TFFNkEZWgsZHH/view?usp=drive_link |
+| 🏠 Giao diện người dùng | https://drive.google.com/file/d/1NeDJBXgLW6dH_ZG8c0PpAa7zoYhvxhfx/view?usp=drive_link |
+| ⚙️ Giao diện quản trị | https://drive.google.com/file/d/12Tc13o4eUP4tjjIu0m4SOdSDUfPyj8Eg/view?usp=drive_link |
 
 
 ## 🛠 Công nghệ sử dụng
