@@ -1,0 +1,196 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - bot_challenge
+
+  # Thông tin nhà hàng
+  - ask_open_time
+  - ask_location
+  - ask_contact
+  - restaurant_policy
+
+  # Đặt bàn / gọi món
+  - buying_guide
+  - ask_deposit_policy
+  - ask_cancellation_policy
+
+  # Thanh toán
+  - ask_payment_methods
+  
+  # Menu
+  - ask_menu
+ 
+  # Nhóm món
+  - ask_hotpot
+  - ask_appetizer
+  - ask_main_dish
+  - ask_dessert
+  - ask_drink
+  - ask_extra_food
+
+  # Tìm món
+  - find_dishes_by_name
+  - find_dishes_by_category
+  - find_dishes_by_price_range
+
+   # Gợi ý
+  - suggest_food
+  - ask_dish_specialty
+
+  # Nguyên liệu
+  - ask_food_ingredient
+
+  # Khác
+  - ask_serving_time
+  - ask_promotion
+  - feedback
+
+
+
+responses:
+ # 1 chào hỏi cơ bản
+  utter_greet:
+    - text: "Chào bạn! Mình là Chatbot của nhà hàng chay Hương Sen 🌸 Bạn cần giúp gì, mình sẽ hỗ trợ ngay nhé!😊"
+
+  utter_goodbye:
+    - text: "Tạm biệt bạn! Rất vui được hỗ trợ bạn hôm nay 👋"
+
+  utter_thank:
+    - text: "Không có chi, mình luôn sẵn sàng giúp đỡ bạn! ❤️"
+
+  utter_iamabot:
+    - text: "Mình là Chatbot được tạo ra để hỗ trợ khách hàng khi có những thắc mắc về nhà hàng chay Hương Sen 🤖"
+    - text: "Mình là trợ lý ảo của Hương Sen, chuyên giải đáp mọi câu hỏi về món ăn chay và dịch vụ nhà hàng!"
+    - text: "Mình là Chatbot hỗ trợ 24/7 cho nhà hàng chay Hương Sen. Hãy hỏi mình bất cứ điều gì nhé!"
+
+  # 2 Thông tin nhà hàng
+  utter_ask_open_time:
+    - text: "⏰ Giờ mở cửa tại nhà hàng chay Hương Sen:\nT2 - T6: 8:00 - 22:00\nT7 - CN: 10:00 - 23:00\nĐặt bàn trước để được phục vụ tốt nhất!"
+
+  utter_ask_location:
+    - text: "📍 Địa chỉ nhà hàng chay Hương Sen:\n🏠 319/22 Lê Văn Thọ, P.8, Q.Gò Vấp, TP.HCM\n🅿️ Có bãi đỗ xe miễn phí cho khách\n📞 Gọi hotline 0123.546.789 để được chỉ đường chi tiết!"
+
+  utter_ask_contact:
+    - text: "📞 Liên hệ nhà hàng Hương Sen:\n☎️ Hotline: 0123.546.789\n📧 Email: huongsen@gmail.com\n💬 Facebook: fb.com/huongsenvegetarian\n📱 Zalo: 0123.546.789\n🕐 Hỗ trợ: 7:00 - 21:30 hàng ngày"
+
+  utter_restaurant_policy:
+    - text: "📜 Chính sách nhà hàng chay Hương Sen:\n✅ Cam kết 100% món chay thuần\n✅ Nguyên liệu tươi mới mỗi ngày\n✅ Không sử dụng bột ngọt\n✅ Vệ sinh an toàn thực phẩm\n✅ Phục vụ tận tâm, chu đáo\n🍽️ Đặt bàn:\n• Đặt trước ít nhất 2 giờ\n• Giữ bàn tối đa 15 phút\n💰 Thanh toán:\n• Tiền mặt hoặc chuyển khoản\n• Không áp dụng thẻ tín dụng\n🚫 Quy định:\n• Không mang đồ ăn từ bên ngoài\n• Không hút thuốc trong nhà hàng\n• Không mang thú cưng\n📞 Hotline: 0123.546.789"
+
+  # 3 Đặt bàn / Gọi món
+  utter_buying_guide:
+    - text: "🍽️ Hướng dẫn đặt bàn tại Nhà hàng Hương Sen\n📞 Cách 1: Gọi hotline 0123.546.789\n🌐 Cách 2: Đặt bàn qua website\n🔹 Bước 1: Cung cấp thông tin\nTruy cập trang chủ và chọn Đặt bàn\nĐiền đầy đủ: Họ tên, số điện thoại, ngày đặt, số lượng khách\nSau đó chọn Tiếp theo để chọn món\n🔹 Bước 2: Lựa chọn món ăn\nChọn món từ thực đơn: Khai vị, Món chính, Lẩu, Mẹt cuốn, Tráng miệng, Đồ uống\nCác món đã chọn sẽ hiển thị để bạn chỉnh sửa số lượng\n🔹 Bước 3: Thanh toán đặt cọc\nThanh toán trước 30% để giữ chỗ\nHình thức: MoMo\nSau khi thanh toán sẽ có xác nhận\nPhần còn lại thanh toán tại nhà hàng\n🔹 Bước 4: Xác nhận đặt bàn\nKiểm tra thông tin và chọn Đồng ý đặt bàn\n🔹 Bước 5: Đến đúng giờ\nNhà hàng giữ bàn tối đa 15 phút\n⏰ Lưu ý: Đặt bàn trước ít nhất 2 giờ"
+
+  utter_ask_deposit_policy:
+    - text: "💵 Chính sách đặt cọc Hương Sen:\n💰 Đặt chỗ online:\n• Cọc 30% tổng giá trị dự kiến\n• Thanh toán qua chuyển khoản\n• Hoàn cọc 100% nếu hủy trước 24h\n🏦 Thông tin chuyển khoản:\n• Quét mã QR MoMo\n• STK: 0123456789\n• Chủ TK: Nhà hàng chay Hương Sen\n📞 Hotline: 0123.546.789"
+
+  utter_ask_cancellation_policy:
+    - text: "❌ Chính sách hủy đặt bàn:\n✅ Hủy trước 24h:\n• Hoàn lại 100% tiền cọc\n⚠️ Hủy trước 12-24h:\n• Hoàn lại 50% tiền cọc\n🚫 Hủy trong vòng 12h:\n• Không hoàn cọc\n📞 Nếu muốn hủy, vui lòng gọi hotline 0123.546.789\n💡 Vui lòng báo sớm để được hỗ trợ tốt nhất!"
+  
+  # 4 Thanh toán
+  utter_ask_payment_methods:
+    - text: "💳 Phương thức thanh toán tại Hương Sen:\n✅ Tiền mặt (VND)\n✅ Chuyển khoản ngân hàng:\n• Vietcombank\n• Techcombank\n✅ Ví điện tử:\n• MoMo\n❌ Chưa hỗ trợ: Thẻ tín dụng quốc tế"
+
+  # 5 Menu
+  utter_ask_menu:
+    - text: "📋 Thực đơn Nhà hàng chay Hương Sen\n🍽️ Danh mục món:\n• Lẩu (5 loại)\n• Khai vị (6 món)\n• Món chính (12 món)\n• Tráng miệng (20 món)\n• Đồ uống (8 loại)\n• Món thêm (19 món)\n• Mẹt cuốn (3 loại)\n🌿 Cam kết:\n• 100% món chay thuần\n• Nguyên liệu tươi mới mỗi ngày\n• Không sử dụng bột ngọt\n• Đảm bảo vệ sinh an toàn thực phẩm\n⭐ Món nổi bật:\n• Lẩu Trường Thọ - 300k\n• Nem cuốn bún gạo lứt - 150k\n• Gỏi nấm sốt Thái - 50k\n• Cơm chiên thảo mộc - 35k\n• Bún bò Huế chay - 45k\n• Chè hạt sen tuyết yến - 49k\n• Trà ô long - 30k\n🔗 Xem menu chi tiết: http://localhost:3001/menu"
+        
+  # 5.1 Nhóm món
+  utter_ask_hotpot:
+    - text: "🍲 Các món lẩu tại Hương Sen:\n1️⃣ Lẩu Trường Thọ - 300k ⭐\n• Nước dùng thanh mát từ rau củ và nấm, giàu vitamin, phù hợp ăn nhẹ và bổ dưỡng\n• Nguyên liệu: Rau cải, nấm kim châm, nấm đông cô, đậu hủ, bún\n2️⃣ Lẩu Nấm Thái - 250k 🌶️\n• Nước dùng chua cay đậm đà kiểu Thái, nhiều loại nấm tươi, thích hợp cho ai thích vị cay\n• Nguyên liệu: Nấm hương, nấm rơm, sả, ớt, me, rau thơm\n3️⃣ Lẩu Thập Cẩm - 200k\n• Kết hợp nhiều loại rau củ, đậu hủ và nấm, đủ vị ngọt, chua, thanh, phù hợp nhóm đông người\n• Nguyên liệu: Rau muống, cải thảo, đậu hủ, nấm các loại, cà rốt, bắp\n4️⃣ Lẩu Chao - 200k\n• Nước dùng đậm vị chao đặc trưng miền Bắc, thơm mùi chao và gia vị, hợp khẩu vị truyền thống\n• Nguyên liệu: Đậu hủ chao, nấm mèo, rau cải, cà chua, bắp non\n5️⃣ Lẩu Chanh Dây - 150k 🍋\n• Nước dùng thanh mát, hơi chua nhẹ từ chanh dây, giải nhiệt, rất phù hợp mùa hè\n• Nguyên liệu: Chanh dây, nấm tươi, đậu hủ, rau xanh, cà rốt\n👥 Phù hợp: Từ 2 người trở lên\n⏰ Thời gian phục vụ: 15 - 20 phút"
+
+  utter_ask_appetizer:
+    - text: "🥗 Món khai vị Hương Sen:\n🌯 Cuốn:\n• Bì Cuốn - 45k\n  Thơm ngon, giòn giòn, cuộn với rau sống tươi mát\n  Nguyên liệu: Bì chay, rau sống, bánh tráng\n• Tàu Hủ Ky Cuốn - 65k\n  Mềm mịn, vị đậm đà của tàu hủ ky và rau củ\n  Nguyên liệu: Tàu hủ ky, rau củ, bún\n🥗 Gỏi/Salad:\n• Gỏi Nấm Sốt Thái - 50k 🌶️ ⭐\n  Chua cay đậm đà, nấm giòn, sốt Thái thơm\n  Nguyên liệu: Nấm, rau thơm, sốt Thái, lạc rang\n• Gỏi Ngó Sen - 55k\n  Ngọt thanh, giòn giòn, phù hợp mùa hè\n  Nguyên liệu: Ngó sen, cà rốt, rau thơm, đậu phộng\n• Salad Khoai Tây - 50k\n  Béo ngậy, thanh mát, dễ ăn\n  Nguyên liệu: Khoai tây, rau xanh, sốt mayonnaise chay\n• Salad Trái Cây - 50k\n  Tươi ngon, chua ngọt nhẹ nhàng, giải nhiệt\n  Nguyên liệu: Trái cây tươi theo mùa, sốt chanh dây\n💡 Gợi ý: Kết hợp nhiều món để đa dạng!"
+
+  utter_ask_main_dish:
+    - text: "🍜 Món chính Hương Sen:\n🍚 Cơm:\n• Cơm Niêu - 60k\n  Hương vị thơm ngon, dẻo, nấu cùng gia vị chay\n  Nguyên liệu: Gạo, đậu hũ, rau củ\n• Cơm Chiên Cốm Sen - 55k\n  Giòn thơm, vị ngọt nhẹ của cốm sen\n  Nguyên liệu: Cốm sen, gạo, rau củ, gia vị chay\n• Cơm Chiên Thảo Mộc - 35k ⭐\n  Béo ngậy, thanh mát, kết hợp thảo mộc tươi\n  Nguyên liệu: Gạo, rau thơm, nấm, gia vị chay\n• Cơm Tấm Chay - 35k\n  Mềm dẻo, ăn kèm rau củ và nước sốt chay đặc trưng\n  Nguyên liệu: Gạo tấm, rau củ, nước sốt chay\n🍜 Bún/Phở:\n• Bún Bò Huế - 40k 🌶️ ⭐\n  Chua cay vừa phải, nấm giòn, nước dùng đậm đà\n  Nguyên liệu: Bún, nấm, rau thơm, nước dùng chay\n• Mì Quảng - 90k\n  Thơm ngon, vị đậm đà, ăn kèm rau sống\n  Nguyên liệu: Mì Quảng, rau củ, đậu hũ, gia vị chay\n• Hủ Tiếu Khô - 40k\n  Mềm dai, ăn cùng nước sốt đặc trưng\n  Nguyên liệu: Hủ Tiếu, rau củ, gia vị chay\n🍝 Mì Ý/Pad Thái:\n• Mì Ý Sốt Kem - 60k\n  Kem béo nhẹ, kết hợp rau củ tươi ngon\n  Nguyên liệu: Mì Ý, kem chay, rau củ\n• Pad Thái - 60k\n  Chua ngọt, giòn ngon, hương vị chuẩn Thái\n  Nguyên liệu: Mì gạo, đậu phụ, rau củ, sốt Thái\n🥣 Khác:\n• Nấm Mối Sốt Hoàng Kim - 80k\n  Nấm mềm, sốt đậm đà, ăn kèm cơm hoặc bún\n  Nguyên liệu: Nấm mối, gia vị chay, rau thơm\n• Cà Ri Nấm - 65k\n  Vị cay nhẹ, nước cốt dừa thơm béo\n  Nguyên liệu: Nấm, nước cốt dừa, rau củ, gia vị chay\n• Pate Nấm Bông Cải Xanh Sốt - 120k\n  Mềm mịn, thơm nức pate nấm\n  Nguyên liệu: Nấm, bông cải xanh, gia vị chay"
+
+  utter_ask_dessert:
+    - text: "🍰 Tráng miệng Hương Sen:\n🍨 Chè:\n• Chè Hạt Sen Tuyết Yến - 49k ⭐\n  Ngọt thanh, hạt sen mềm, kết hợp thạch tuyết yến\n  Nguyên liệu: Hạt sen, tuyết yến, đường thốt nốt, nước cốt dừa\n• Chè Khoai Dẻo Ngũ Sắc - 35k\n  Dẻo thơm, nhiều màu sắc bắt mắt\n  Nguyên liệu: Khoai lang, bột năng, đường, màu tự nhiên\n• Dương Chi Cam Lộ - 25k\n  Thanh mát, chua nhẹ, dễ ăn\n  Nguyên liệu: Dương chi, cam lộ, đường\n• Xoài Dầm Nước Cốt Dừa - 40k\n  Ngọt dịu, béo béo, kết hợp xoài tươi\n  Nguyên liệu: Xoài, nước cốt dừa, đường\n• Thạch Nha Đam Trái Cây - 36k\n  Mát lạnh, giòn sần sật, thanh mát\n  Nguyên liệu: Nha đam, trái cây tươi, đường\n• Thạch Rau Câu Hoa Đậu Biếc - 30k\n  Giòn dai, thơm nhẹ, màu tím bắt mắt\n  Nguyên liệu: Rau câu, hoa đậu biếc, đường\n🍰 Bánh:\n• Tiramisu Trà Xanh - 30k\n  Mềm mịn, béo ngậy, vị trà xanh nhẹ nhàng\n  Nguyên liệu: Bánh bông lan, kem, trà xanh, đường\n• Bánh Flan - 20k\n  Mềm mịn, béo vừa phải\n  Nguyên liệu: Sữa thực vật, trứng chay, đường\n• Bánh Kẹp Sữa Chua - 35k\n  Giòn rụm, béo thơm, có kem chua dịu\n  Nguyên liệu: Bột mì, kem sữa chua chay, đường\n• Bánh Khoai Môn Hấp Cốt Dừa - 38k\n  Dẻo thơm, vị khoai môn béo nhẹ\n  Nguyên liệu: Khoai môn, nước cốt dừa, bột năng, đường\n• Bánh Mochi Nhân Đậu Đỏ - 45k\n  Dẻo mềm, ngọt vừa, nhân đậu đỏ bùi\n  Nguyên liệu: Bột nếp, đậu đỏ, đường\n🍦 Kem:\n• Kem Dừa Bến Tre - 30k\n  Ngọt béo, thơm vị dừa tươi\n  Nguyên liệu: Nước cốt dừa, đường, sữa thực vật\n• Kem Bơ Sữa Chua Không Đường - 46k\n  Béo béo, chua nhẹ, tốt cho sức khỏe\n  Nguyên liệu: Bơ, sữa chua chay, đường thốt nốt\n• Kem Xoài Sữa Chua Hy Lạp - 45k\n  Ngọt thanh, mát lạnh, vị xoài tươi\n  Nguyên liệu: Xoài, sữa chua Hy Lạp chay, đường\n• Kem Trái Cây Sữa Chua Hạt Điều - 42k\n  Mát lạnh, thơm béo, bổ dưỡng\n  Nguyên liệu: Trái cây tươi, sữa chua chay, hạt điều\n🍟 Ăn vặt:\n• Khoai Lang Chiên - 35k\n  Giòn rụm, thơm béo\n  Nguyên liệu: Khoai lang, dầu thực vật, muối\n• Trái Cây Ngào Đường - 39k\n  Ngọt nhẹ, thanh mát\n  Nguyên liệu: Trái cây tươi, đường, nước\n• Dâu Tây Phủ Socola Đen - 50k\n  Ngọt đắng vừa phải, kết hợp dâu tươi\n  Nguyên liệu: Dâu tây, socola đen, đường\n• Xoài Lắc Muối Ớt - 35k\n  Chua cay, ngọt thanh, giòn ngon\n  Nguyên liệu: Xoài, muối ớt, đường\n• Bánh Mì Bơ Tỏi - 30k\n  Giòn thơm, vị bơ tỏi đặc trưng\n  Nguyên liệu: Bánh mì, bơ chay, tỏi"
+
+  utter_ask_drink:
+    - text: "☕ Đồ uống Hương Sen:\n🍵 Trà:\n• Trà Cam Quế Long Nhãn - 35k\n  Hương thơm dịu, kết hợp cam quế và long nhãn\n  Nguyên liệu: Trà, cam, quế, long nhãn, đường\n• Trà Ô Long Tiên Tử - 30k ⭐\n  Vị trà nhẹ, hậu ngọt thanh\n  Nguyên liệu: Trà Ô Long, thảo mộc, đường\n• Trà Tắc Xí Muội - 25k\n  Chua nhẹ, thanh mát, dễ uống\n  Nguyên liệu: Trà, tắc, xí muội, đường\n☕ Cà phê:\n• Bạc Sỉu - 30k\n  Vị béo ngậy, thơm cà phê rang xay\n  Nguyên liệu: Cà phê, sữa đặc chay, đường\n• Cafe Đen - 25k\n  Đậm đà, nguyên chất, thơm nức\n  Nguyên liệu: Cà phê, nước sôi\n🥤 Nước ép/Sinh tố:\n• Nước Ép Dưa Hấu - 30k\n  Ngọt tự nhiên, mát lạnh\n  Nguyên liệu: Dưa hấu tươi, đá, đường\n🥤 Nước ngọt:\n• Coca/Pepsi/Sprite - 20k\n  Ngọt, giải khát\n  Nguyên liệu: Nước ngọt đóng chai\n• Soda - 20k\n  Sủi bọt, mát lạnh\n  Nguyên liệu: Nước soda, đường\n• Nước Suối - 15k\n  Tinh khiết, giải khát\n  Nguyên liệu: Nước lọc tinh khiết\n❄️ Tất cả phục vụ kèm đá theo yêu cầu!"
+
+  utter_ask_extra_food:
+    - text: "🥢 Món gọi thêm Hương Sen:\n🍚 Cơm & Bún:\n- Cơm Trắng - 10k\n  Cơm mềm, thơm, ăn kèm món chính\n  Nguyên liệu: Gạo, nước, muối\n- Bún - 10k\n  Sợi bún dai, mềm, dễ ăn\n  Nguyên liệu: Bột gạo, nước\n- Bánh Mì - 5k\n  Giòn bên ngoài, mềm bên trong\n  Nguyên liệu: Bột mì, men, nước, muối\n🥬 Rau & Canh:\n- Rau Củ Luộc - 20k\n  Thanh mát, giữ nguyên vị rau củ\n  Nguyên liệu: Rau củ tươi, muối, nước\n- Soup Bắp Cải - 25k\n  Ngọt tự nhiên từ bắp cải\n  Nguyên liệu: Bắp cải, cà rốt, gia vị chay\n- Canh Chua Ngó Sen - 25k\n  Chua nhẹ, thanh mát\n  Nguyên liệu: Ngó sen, me, cà chua, gia vị chay\n🍱 Món chiên / Cuốn / Nướng:\n- Chả Giò Chay - 25k\n  Giòn rụm, nhân thơm ngon\n  Nguyên liệu: Bánh tráng, rau củ, nấm, gia vị chay\n- Đậu Hủ Chiên Giòn - 20k\n  Vỏ giòn, bên trong mềm\n  Nguyên liệu: Đậu hũ, bột chiên, dầu ăn\n- Bánh Bao Chay - 30k\n  Mềm, nhân đậu và rau củ\n  Nguyên liệu: Bột mì, nhân đậu, rau củ\n- Khoai Tây Chiên - 20k\n  Giòn, thơm, ăn kèm sốt\n  Nguyên liệu: Khoai tây, dầu, muối\n- Xúc Xích Chay - 20k\n  Dai, thơm, hương vị rau củ\n  Nguyên liệu: Đậu nành, rau củ, gia vị chay\n- Chả Đậu Xanh Lá Lốt - 48k\n  Thơm lá lốt, đậm vị đậu xanh\n  Nguyên liệu: Đậu xanh, lá lốt, gia vị chay\n- Nem Chua Chay - 40k\n  Chua nhẹ, thơm, dai ngon\n  Nguyên liệu: Đậu nành lên men, gia vị chay\n- Khoai Lang Mật Chiên Mật Ong - 30k\n  Ngọt thanh, giòn bên ngoài\n  Nguyên liệu: Khoai lang, mật ong, dầu ăn\n- Cà Tím Nướng Mỡ Hành - 45k\n  Mềm thơm, béo mỡ hành\n  Nguyên liệu: Cà tím, hành, dầu ăn, gia vị chay\n- Cà Rốt Nướng Mật Ong Và Hạt Điều - 40k\n  Ngọt tự nhiên, bùi bùi hạt điều\n  Nguyên liệu: Cà rốt, mật ong, hạt điều\n🍘 Snack & Hạt:\n- Hạt Dẻ Rang - 50k\n  Bùi thơm, giòn nhẹ\n  Nguyên liệu: Hạt dẻ, muối, dầu thực vật\n- Snack rong biển chay - 20k\n  Giòn, mặn nhẹ\n  Nguyên liệu: Rong biển, muối, dầu ăn\n- Snack rong nho chay - 20k\n  Mềm, mặn nhẹ, giàu chất xơ\n  Nguyên liệu: Rong nho, muối\n💡 Gọi thêm để ăn no hơn!"
+
+  utter_suggest_food:
+    - text: "⭐ Gợi ý combo món ngon tại Hương Sen:\n🟢 Combo Thanh Mát (2 người):\n- Lẩu Chanh Dây - 150k\n- Gỏi Ngó Sen - 55k\n- 2 Trà Ô Long - 60k\n💰 Tổng: ~265k\n🔥 Combo Cay Nồng (4 người):\n- Lẩu Nấm Thái - 250k\n- Nem Cuốn - 150k\n- Bánh Flan - 20k\n- Chè Hạt Sen - 49k\n- 4 Nước Ngọt - 80k\n💰 Tổng: ~549k\n👨‍👩‍👧‍👦 Combo Gia Đình Vui Vẻ (6 người):\n- Lẩu Thập Cẩm - 200k\n- Nem Cuốn Bún Gạo Lứt - 150k\n- Gỏi Nấm Sốt Thái - 50k\n- Cơm Chiên Thảo Mộc - 35k\n- Bánh Mochi - 45k\n- Chè Khoai Dẻo Ngũ Sắc - 35k\n- 6 Trà Cam Quế - 180k\n💰 Tổng: ~695k\n🍽️ Combo Ăn Vặt Vui Vẻ (5 người):\n- Nem Cuốn Bún Gạo Lứt - 150k\n- Khoai Lang Chiên - 35k\n- Nước Ép Dưa Hấu - 30k\n- Chè Khoai Dẻo Ngũ Sắc - 35k\n- Kem Dừa - 30k\n💰 Tổng: ~280k\n📞 Đặt bàn & tư vấn thêm: 0123.546.789"
+  
+  utter_ask_dish_specialty:
+    - text: "👨‍🍳 Món đặc trưng Hương Sen:\n🏆 Top 7 Best-seller:\n1️⃣ Lẩu Trường Thọ - 300k\n   Nước dùng thanh mát, đậm đà rau củ tươi, ăn kèm nấm, đậu hủ và các loại rau đặc trưng.\n2️⃣ Gỏi Ngó Sen - 55k\n   Ngó sen tươi từ Đồng Tháp, kết hợp rau thơm, đậu phộng rang và nước sốt chua ngọt đặc trưng.\n3️⃣ Bún Bò Huế Chay - 40k\n   Chuẩn vị Huế, nước dùng thơm ngon, nêm gia vị tự nhiên, không bột ngọt.\n4️⃣ Chè Hạt Sen Yến - 49k\n   Hạt sen Bá Thiện, yến sào tinh chế, nước cốt dừa thanh nhẹ, món tráng miệng giàu dinh dưỡng.\n5️⃣ Mì Ý Sốt Kem - 60k\n   Sốt kem nấm homemade, kết hợp mì Ý al dente và rau củ tươi, thơm béo, hợp khẩu vị cả trẻ em lẫn người lớn.\n6️⃣ Nem Cuốn Bún Gạo Lứt - 150k\n   Bún gạo lứt, rau sống tươi, cuốn chặt tay, chấm sốt me đặc trưng.\n7️⃣ Cơm Chiên Thảo Mộc - 35k\n   Cơm chiên kết hợp thảo mộc tươi, nấm và đậu hũ, món ăn nhẹ nhàng, tốt cho sức khỏe.\n⭐ Hơn 1000 khách đã trải nghiệm và yêu thích các món đặc trưng này!"
+
+  # Nguyên liệu
+  utter_ask_food_ingredient:
+    - text: "🌿 Nguyên liệu và xuất xứ tại Hương Sen:\n✅ 100% thực vật:\n• Không trứng, sữa động vật\n🥬 Rau củ:\n• Organic Đà Lạt\n🍄 Nấm:\n• Tươi từ Đồng Nai, Bình Dương\n🌾 Gạo:\n• ST25 Sóc Trăng\n🥥 Dừa:\n• Bến Tre\n🌰 Hạt sen:\n• Đồng Tháp\n🏭 Tự sản xuất tại nhà hàng:\n• Đậu hũ tươi\n• Nước dùng lẩu\n• Sốt các loại\n🚫 Không chứa:\n• Bột ngọt (MSG)\n• Phẩm màu tổng hợp\n• Chất bảo quản\n✅ Chứng nhận vệ sinh an toàn thực phẩm, kiểm định hàng tuần!"
+
+
+  # Thời gian phục vụ
+  utter_ask_serving_time:
+    - text: "⏰ Thời gian lên món:\n⚡ Nhanh (10-15 phút):\n• Đồ uống\n• Món khai vị\n• Cơm / Bún\n🍳 Trung bình (15-25 phút):\n• Món chiên / xào\n• Lẩu\n• Món chính\n👨‍🍳 Cần thời gian (25-30 phút):\n• Món đặc biệt\n• Nhóm đông\n📞 Gọi trước để giảm thời gian chờ\n🕐 Giờ cao điểm: 12h-13h, 18h-19h"
+
+  # Khuyến mãi
+  utter_ask_promotion:
+    - text: "🎉 Khuyến mãi tháng này:\n💝 Ưu đãi đang có:\n1️⃣ Giảm 20% Lẩu Nấm Thái (T2-T6)\n   - Chỉ áp dụng từ thứ 2 đến thứ 6\n2️⃣ Tặng tráng miệng cho hóa đơn từ 500k\n   - Áp dụng cho tất cả món ăn\n3️⃣ Mã FAMILY: Giảm 10% cho nhóm 6+ người\n   - Nhập mã khi đặt bàn hoặc thanh toán\n🆓 Mã khuyến mãi khác của nhà hàng:\n• FREEDRINK - Tặng 1 đồ uống bất kỳ\n• CHRISTMAS - Giảm 15% dịp Giáng Sinh\n• BIRTHDAY - Quà tặng sinh nhật, miễn phí tráng miệng\n• CHAYDAY - Giảm 10% các món chay thứ 3 hàng tuần\n• FAMILY - Giảm 10% cho nhóm 6+ người\n📱 Theo dõi fanpage để cập nhật mới nhất!"
+
+  # Feedback
+  utter_feedback:
+    - text: "💬 Cảm ơn phản hồi của bạn!\n📝 Gửi đánh giá:\n- Trang đánh giá trên website của nhà hàng\n- Facebook: fb.com/huongsenvegetarian\n🎁 Quà tặng:\n- Voucher 50k cho review 5 sao\n- Tham gia bốc thăm cuối tháng\nÝ kiến của bạn giúp Hương Sen hoàn thiện hơn! 💚"
+
+  utter_fallback:
+  - text: "Xin lỗi bạn, mình chưa hiểu câu hỏi của bạn. Bạn có thể nói lại không?"
+
+
+
+actions:
+  # Actions cơ bản
+  - action_fallback
+  
+  # Actions tìm kiếm món
+  - action_find_dishes_by_name
+  - action_find_dishes_by_category
+  - action_find_dishes_by_price_range
+  
+
+slots:
+  dish_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: dish_name
+
+  category_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: category_name
+        
+  from_price:
+    type: float
+    influence_conversation: false
+    initial_value: 0
+    mappings:
+      - type: from_entity
+        entity: from_price
+
+  to_price:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: to_price
+
+entities:
+  - dish_name
+  - category_name
+  - from_price
+  - to_price
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

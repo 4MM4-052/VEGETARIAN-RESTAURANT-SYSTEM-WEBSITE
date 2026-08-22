@@ -1,0 +1,68 @@
+# language: vi
+
+# pipeline:
+# - name: WhitespaceTokenizer
+# - name: RegexFeaturizer
+# - name: LexicalSyntacticFeaturizer
+# - name: CountVectorsFeaturizer
+# - name: DIETClassifier
+#   epochs: 150
+# - name: EntitySynonymMapper
+# - name: ResponseSelector
+#   epochs: 150
+
+# policies:
+# - name: MemoizationPolicy
+# - name: RulePolicy
+# - name: TEDPolicy
+#   epochs: 150
+# assistant_id: 20260323-193304-product-duck
+
+
+
+
+recipe: default.v1
+version: "3.1"
+
+language: vi
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer  # word-level
+- name: CountVectorsFeaturizer  # char-level
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+  embedding_dimension: 20
+  tensorboard_log_dir: ./logs
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 150
+- name: FallbackClassifier
+  threshold: 0.4
+  ambiguity_threshold: 0.1
+
+policies:
+- name: MemoizationPolicy  # Ghi nhớ hội thoại
+- name: TEDPolicy  # Mô hình học sâu dự đoán hành động tiếp theo
+  max_history: 3  # Tăng khả năng ghi nhớ hội thoại trước đó
+  epochs: 100 # Giảm để tăng tốc train
+  constrain_similarities: true
+- name: RulePolicy  # Chính sách dựa trên quy tắc
+  core_fallback_threshold: 0.4
+  core_fallback_action_name: "utter_fallback"
+  enable_fallback_prediction: true
+- name: UnexpecTEDIntentPolicy  # Xử lý intent bất ngờ
+  max_history: 5
+  epochs: 100
+- name: FallbackPolicy
+  nlu_threshold: 0.4
+  core_threshold: 0.4
+  fallback_action_name: "action_fallback"
+
+assistant_id: 20260327-031121-impulsive-liquidation

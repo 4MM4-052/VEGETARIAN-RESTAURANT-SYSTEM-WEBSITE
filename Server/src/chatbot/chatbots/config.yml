@@ -1,0 +1,82 @@
+# language: vi
+
+# pipeline:
+# - name: WhitespaceTokenizer
+# - name: RegexFeaturizer
+# - name: LexicalSyntacticFeaturizer
+# - name: CountVectorsFeaturizer
+# - name: DIETClassifier
+#   epochs: 150
+# - name: EntitySynonymMapper
+# - name: ResponseSelector
+#   epochs: 150
+
+# policies:
+# - name: MemoizationPolicy
+# - name: RulePolicy
+# - name: TEDPolicy
+#   epochs: 150
+# assistant_id: 20260323-193304-product-duck
+
+
+
+
+recipe: default.v1
+version: "3.1"
+
+language: vi
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: RegexEntityExtractor
+
+- name: LexicalSyntacticFeaturizer
+
+# word-level
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+
+# char-level
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+
+# MODEL CHÍNH
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+  embedding_dimension: 128
+  tensorboard_log_dir: ./logs
+  tensorboard_log_level: epoch
+
+- name: EntitySynonymMapper
+
+- name: ResponseSelector
+  epochs: 100
+
+- name: FallbackClassifier
+  threshold: 0.5
+  ambiguity_threshold: 0.1
+
+
+policies:
+- name: MemoizationPolicy
+  max_history: 5
+
+- name: TEDPolicy
+  max_history: 5   #  tăng lên
+  epochs: 100
+  constrain_similarities: true
+
+- name: RulePolicy
+  core_fallback_threshold: 0.5
+  core_fallback_action_name: "action_fallback"
+  enable_fallback_prediction: true
+
+- name: UnexpecTEDIntentPolicy
+  max_history: 5
+  epochs: 100
+
+assistant_id: huong_sen_bot_v1

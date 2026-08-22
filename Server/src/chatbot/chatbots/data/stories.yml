@@ -1,0 +1,365 @@
+# version: "3.1"
+
+# stories:
+#   # =========================
+#   # 1. TƯƠNG TÁC CƠ BẢN
+#   # =========================
+#   - story: chào khách
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+
+#   - story: tạm biệt khách
+#     steps:
+#       - intent: goodbye
+#       - action: utter_goodbye
+
+#   - story: cảm ơn khách
+#     steps:
+#       - intent: thank
+#       - action: utter_thank
+
+#   - story: bot challenge
+#     steps:
+#       - intent: bot_challenge
+#       - action: utter_iamabot
+
+#   # =========================
+#   # 2. THÔNG TIN & CHÍNH SÁCH
+#   # =========================
+#   - story: hỏi giờ mở cửa
+#     steps:
+#       - intent: ask_open_time
+#       - action: utter_ask_open_time
+
+#   - story: hỏi địa chỉ
+#     steps:
+#       - intent: ask_location
+#       - action: utter_ask_location
+
+#   - story: hỏi liên hệ
+#     steps:
+#       - intent: ask_contact
+#       - action: utter_ask_contact
+
+#   - story: nội quy nhà hàng
+#     steps:
+#       - intent: restaurant_policy
+#       - action: utter_restaurant_policy
+
+#   # =========================
+#   # 3. ĐẶT BÀN & GỌI MÓN
+#   # =========================
+#   - story: hướng dẫn đặt bàn
+#     steps:
+#       - intent: buying_guide
+#       - action: utter_buying_guide
+
+#   - story: hỏi về tiền cọc
+#     steps:
+#       - intent: ask_deposit_policy
+#       - action: utter_ask_deposit_policy
+
+#   - story: hỏi về hủy đặt bàn
+#     steps:
+#       - intent: ask_cancellation_policy
+#       - action: utter_ask_cancellation_policy
+
+#   # =========================
+#   # 4. THANH TOÁN
+#   # =========================
+#   - story: phương thức thanh toán
+#     steps:
+#       - intent: ask_payment_methods
+#       - action: utter_ask_payment_methods
+
+#    # =========================
+#   # 5. MENU & NHÓM MÓN
+#   # =========================
+#   - story: hỏi menu
+#     steps:
+#       - intent: ask_menu
+#       - action: utter_ask_menu
+
+#   - story: hỏi món lẩu
+#     steps:
+#       - intent: ask_hotpot
+#       - action: utter_ask_hotpot
+
+#   - story: hỏi món khai vị
+#     steps:
+#       - intent: ask_appetizer
+#       - action: utter_ask_appetizer
+
+#   - story: hỏi món chính
+#     steps:
+#       - intent: ask_main_dish
+#       - action: utter_ask_main_dish
+
+#   - story: hỏi món tráng miệng
+#     steps:
+#       - intent: ask_dessert
+#       - action: utter_ask_dessert
+
+#   - story: hỏi đồ uống
+#     steps:
+#       - intent: ask_drink
+#       - action: utter_ask_drink
+
+#   - story: hỏi món thêm
+#     steps:
+#       - intent: ask_extra_food
+#       - action: utter_ask_extra_food
+
+#   # =========================
+#   # 6. TÌM KIẾM MÓN (ACTION)
+#   # =========================
+#   - story: tìm món theo tên
+#     steps:
+#       - intent: find_dishes_by_name
+#       - action: action_find_dishes_by_name
+
+#   - story: tìm món theo danh mục
+#     steps:
+#       - intent: find_dishes_by_category
+#       - action: action_find_dishes_by_category
+
+#   - story: tìm món theo giá
+#     steps:
+#       - intent: find_dishes_by_price_range
+#       - action: action_find_dishes_by_price_range
+
+#   # =========================
+#   # 7. GIÁ, GỢI Ý & NGUYÊN LIỆU
+#   # =========================
+
+#   - story: gợi ý món ăn
+#     steps:
+#       - intent: suggest_food
+#       - action: utter_suggest_food
+
+#   - story: hỏi món đặc trưng
+#     steps:
+#       - intent: ask_dish_specialty
+#       - action: utter_ask_dish_specialty
+
+#   - story: hỏi nguyên liệu
+#     steps:
+#       - intent: ask_food_ingredient
+#       - action: utter_ask_food_ingredient
+
+ 
+#   # =========================
+#   # 8. CÁC TÍNH NĂNG KHÁC
+#   # =========================
+#   - story: hỏi thời gian lên món
+#     steps:
+#       - intent: ask_serving_time
+#       - action: utter_ask_serving_time
+
+#   - story: hỏi khuyến mãi
+#     steps:
+#       - intent: ask_promotion
+#       - action: utter_ask_promotion
+
+#   - story: feedback
+#     steps:
+#       - intent: feedback
+#       - action: utter_feedback
+
+
+
+
+
+
+
+
+version: "3.1"
+
+stories:
+
+# =========================
+# BASIC FLOWS
+# =========================
+
+- story: chào rồi hỏi menu
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_menu
+    - action: utter_ask_menu
+
+- story: hỏi menu rồi hỏi món chính
+  steps:
+    - intent: ask_menu
+    - action: utter_ask_menu
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+
+- story: hỏi món chính rồi hỏi tráng miệng
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: ask_dessert
+    - action: utter_ask_dessert
+
+- story: hỏi khai vị rồi xin gợi ý
+  steps:
+    - intent: ask_appetizer
+    - action: utter_ask_appetizer
+    - intent: suggest_food
+    - action: utter_suggest_food
+
+- story: hỏi món rồi tìm theo giá
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: find_dishes_by_price_range
+    - action: action_find_dishes_by_price_range
+
+- story: hỏi khuyến mãi rồi đặt bàn
+  steps:
+    - intent: ask_promotion
+    - action: utter_ask_promotion
+    - intent: buying_guide
+    - action: utter_buying_guide
+
+- story: hỏi địa chỉ rồi hỏi giờ mở cửa
+  steps:
+    - intent: ask_location
+    - action: utter_ask_location
+    - intent: ask_open_time
+    - action: utter_ask_open_time
+
+- story: feedback rồi cảm ơn
+  steps:
+    - intent: feedback
+    - action: utter_feedback
+    - intent: thank
+    - action: utter_thank
+
+
+# =========================
+# ADVANCED FLOWS
+# =========================
+
+- story: khách mới vào hỏi menu full
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_menu
+    - action: utter_ask_menu
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: suggest_food
+    - action: utter_suggest_food
+
+- story: hỏi địa chỉ rồi đặt bàn
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_location
+    - action: utter_ask_location
+    - intent: buying_guide
+    - action: utter_buying_guide
+    - intent: ask_deposit_policy
+    - action: utter_ask_deposit_policy
+
+- story: tìm món cụ thể
+  steps:
+    - intent: ask_menu
+    - action: utter_ask_menu
+    - intent: find_dishes_by_name
+    - action: action_find_dishes_by_name
+
+- story: hỏi combo rồi hỏi đặc sản
+  steps:
+    - intent: suggest_food
+    - action: utter_suggest_food
+    - intent: ask_dish_specialty
+    - action: utter_ask_dish_specialty
+
+- story: ăn xong feedback
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: feedback
+    - action: utter_feedback
+
+- story: hỏi tráng miệng rồi gọi thêm
+  steps:
+    - intent: ask_dessert
+    - action: utter_ask_dessert
+    - intent: ask_extra_food
+    - action: utter_ask_extra_food
+
+- story: hỏi khuyến mãi rồi thanh toán
+  steps:
+    - intent: ask_promotion
+    - action: utter_ask_promotion
+    - intent: ask_payment_methods
+    - action: utter_ask_payment_methods
+
+- story: hội thoại đầy đủ
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_menu
+    - action: utter_ask_menu
+    - intent: ask_appetizer
+    - action: utter_ask_appetizer
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: ask_dessert
+    - action: utter_ask_dessert
+    - intent: thank
+    - action: utter_thank
+    - intent: goodbye
+    - action: utter_goodbye
+
+
+# =========================
+# EXTRA REALISTIC FLOWS
+# =========================
+
+- story: hỏi món rồi hỏi nguyên liệu
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: ask_food_ingredient
+    - action: utter_ask_food_ingredient
+
+- story: hỏi món rồi hỏi thời gian lên món
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: ask_serving_time
+    - action: utter_ask_serving_time
+
+- story: hỏi món rồi hỏi món thêm
+  steps:
+    - intent: ask_main_dish
+    - action: utter_ask_main_dish
+    - intent: ask_extra_food
+    - action: utter_ask_extra_food
+
+- story: hỏi menu rồi hỏi đồ uống
+  steps:
+    - intent: ask_menu
+    - action: utter_ask_menu
+    - intent: ask_drink
+    - action: utter_ask_drink
+
+- story: hỏi đặt bàn rồi hỏi thanh toán
+  steps:
+    - intent: buying_guide
+    - action: utter_buying_guide
+    - intent: ask_payment_methods
+    - action: utter_ask_payment_methods
+
+- story: hỏi chính sách rồi hỏi hủy bàn
+  steps:
+    - intent: restaurant_policy
+    - action: utter_restaurant_policy
+    - intent: ask_cancellation_policy
+    - action: utter_ask_cancellation_policy

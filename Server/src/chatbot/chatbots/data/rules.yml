@@ -1,0 +1,196 @@
+version: "3.1"
+
+rules:
+
+# =========================
+# 1. CHÀO HỎI & TẠM BIỆT
+# =========================
+
+- rule: Chào hỏi khi khách mới vào
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Cảm ơn khi khách nói lời cảm ơn
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Tạm biệt khi khách rời đi
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Xác nhận mình là bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# =========================
+# 2. THÔNG TIN NHÀ HÀNG
+# =========================
+
+- rule: Giờ mở cửa
+  steps:
+  - intent: ask_open_time
+  - action: utter_ask_open_time
+
+- rule: Địa chỉ nhà hàng
+  steps:
+  - intent: ask_location
+  - action: utter_ask_location
+
+- rule: Liên hệ - hotline
+  steps:
+  - intent: ask_contact
+  - action: utter_ask_contact
+
+- rule: Nội quy & chính sách phục vụ
+  steps:
+  - intent: restaurant_policy
+  - action: utter_restaurant_policy
+
+# ===============================
+# 3. HƯỚNG DẪN ĐẶT BÀN - GỌI MÓN
+# ===============================
+
+- rule: Hướng dẫn đặt bàn
+  steps:
+  - intent: buying_guide
+  - action: utter_buying_guide
+
+- rule: Chính sách đặt cọc
+  steps:
+  - intent: ask_deposit_policy
+  - action: utter_ask_deposit_policy
+
+- rule: Chính sách hủy bàn / hủy món
+  steps:
+  - intent: ask_cancellation_policy
+  - action: utter_ask_cancellation_policy
+
+# =========================
+# 4. THANH TOÁN
+# =========================
+
+- rule: Các phương thức thanh toán
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_ask_payment_methods
+
+# =========================
+# 5. MENU TỔNG QUAN
+# =========================
+
+- rule: Hỏi menu tổng quát
+  steps:
+  - intent: ask_menu
+  - action: utter_ask_menu
+
+# =========================
+# 6. CHI TIẾT NHÓM MÓN
+# =========================
+
+- rule: Hỏi về lẩu
+  steps:
+  - intent: ask_hotpot
+  - action: utter_ask_hotpot
+
+- rule: Hỏi về món khai vị / cuốn
+  steps:
+  - intent: ask_appetizer
+  - action: utter_ask_appetizer
+
+- rule: Hỏi về món chính
+  steps:
+  - intent: ask_main_dish
+  - action: utter_ask_main_dish
+
+- rule: Hỏi về tráng miệng
+  steps:
+  - intent: ask_dessert
+  - action: utter_ask_dessert
+
+- rule: Hỏi về đồ uống
+  steps:
+  - intent: ask_drink
+  - action: utter_ask_drink
+
+- rule: Hỏi về món gọi thêm
+  steps:
+  - intent: ask_extra_food
+  - action: utter_ask_extra_food
+
+# =========================
+# 7. TÌM MÓN THEO TÊN / DANH MỤC / GIÁ
+# =========================
+
+- rule: Tìm món theo tên cụ thể (có entity)
+  steps:
+  - intent: find_dishes_by_name
+    entities:
+      - dish_name
+  - action: action_find_dishes_by_name
+
+- rule: Tìm món theo danh mục
+  steps:
+  - intent: find_dishes_by_category
+    entities:
+      - category_name
+  - action: action_find_dishes_by_category
+
+- rule: Tìm món theo khoảng giá
+  steps:
+  - intent: find_dishes_by_price_range
+    entities:
+      - from_price
+      - to_price
+  - action: action_find_dishes_by_price_range
+
+# =========================
+# 8. GIÁ MÓN & GỢI Ý
+# =========================
+
+- rule: Gợi ý món ăn theo tình huống
+  steps:
+  - intent: suggest_food
+  - action: utter_suggest_food
+
+- rule: Hỏi món đặc trưng / best-seller
+  steps:
+  - intent: ask_dish_specialty
+  - action: utter_ask_dish_specialty
+
+# =========================
+# 9. NGUYÊN LIỆU & THÔNG TIN MÓN
+# =========================
+
+- rule: Hỏi thành phần / có thuần chay không
+  steps:
+  - intent: ask_food_ingredient
+  - action: utter_ask_food_ingredient
+
+- rule: Hỏi thời gian lên món
+  steps:
+  - intent: ask_serving_time
+  - action: utter_ask_serving_time
+
+# =========================
+# 10. KHUYẾN MÃI
+# =========================
+
+- rule: Hỏi khuyến mãi hiện tại
+  steps:
+  - intent: ask_promotion
+  - action: utter_ask_promotion
+
+
+# =========================
+# 11. PHẢN HỒI KHÁCH HÀNG
+# =========================
+
+- rule: Nhận phản hồi từ khách
+  steps:
+  - intent: feedback
+  - action: utter_feedback
+

@@ -1,0 +1,540 @@
+product_name,day_of_week,sold
+Bánh Flan Kiểu Pháp,0,0
+Tiramisu Trà Xanh,0,0
+Cơm Chiên Thảo Mộc,0,0
+Bánh Kếp Sữa Chua Trái Cây,0,0
+Kem Dừa Bến Tre,0,0
+Gỏi Nấm Sốt Thái,0,0
+Gỏi Ngó Sen Sốt Chua Ngọt,0,0
+Trà Tắc Xí Muội ,0,0
+Trà Ô Long Tiên Tử,0,0
+Bạc Sỉu ,0,0
+Cafe Đen,0,0
+ Trà Cam Quế Long Nhãn,0,0
+Nước Ép Dưa Hấu,0,0
+Cơm Chiên Cốm Sen,0,0
+Cơm Niêu,0,0
+Cơm Tấm Sườn Bì Chả Chay,0,0
+Mì Ý Sốt Kem,0,0
+Salad Trái Cây,0,0
+Salad Khoai Tây Bắp,0,0
+Bì Cuốn,0,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,0,0
+Chè Hạt Sen Tuyết Yến,0,0
+Dương Chi Cam Lộ,0,0
+COCA/ FANTA CAM/ SPRITE/ SODA,0,0
+Nước Suối Dasani,0,0
+Hủ Tiếu Khô,0,0
+Pad Thái,0,0
+Bún Bò Huế ,0,0
+Cà Ri Nấm,0,0
+Nấm Mối Sốt Hoàng Kim,0,0
+Cơm Trắng Thêm,0,0
+Bánh Mì Thêm,0,0
+Rau Củ Luộc ,0,0
+Cơm Trắng Thêm,0,0
+Bún Thêm,0,0
+Soup Bắp Cải Cuộn,0,0
+Canh Chua Ngó Sen,0,0
+Lẩu Nấm Thái,0,0
+Lẩu Thập Cẩm,0,0
+Lẩu Trường Thọ,0,0
+Lẩu Chao,0,0
+Lẩu Chanh Dây,0,0
+Nấm Nướng Lá Lốt,0,0
+Bánh Xèo,0,0
+Nem Cuốn Bún Gạo Lứt,0,0
+Cháo Nấm,0,0
+Kem Chuối,0,0
+Khoai Lang Chiên Giòn,0,0
+Khoai Môn Sốt Mắm,0,0
+Mì Quảng,0,0
+Pate Nấm Bông Cải Xanh Sốt ,0,0
+Bánh Mì Bơ Tỏi,0,0
+Chả giò chay,0,0
+Đậu hũ chiên giòn,0,0
+Bánh bao chay,0,0
+Khoai tây chiên,0,0
+Xúc xích chay,0,0
+Chả đậu xanh lá lốt,0,0
+Nem chua chay,0,0
+Hạt dẻ rang chay,0,0
+Khoai lang chiên mật ong,0,0
+Snack rong nho chay,0,0
+Snack rong biển chay,0,0
+Cà tím nướng mỡ hành,0,0
+Cà rốt nướng mật ong và hạt điều,0,0
+Xoài dầm nước cốt dừa,0,0
+Thạch rau câu hoa đậu biếc,0,0
+Bánh mochi nhân đậu đỏ,0,0
+Chè khoai dẻo ngũ sắc,0,0
+Bánh khoai môn hấp cốt dừa,0,0
+Kem trái cây sữa chua hạt điều,0,0
+Kem xoài sữa chua Hy Lạp ,0,0
+Kem bơ sữa chua không đường,0,0
+Xoài lắc muối ớt chay,0,0
+Dâu tây phủ socola đen,0,0
+Thạch nha đam trái cây,0,0
+Trái cây ngào đường,0,0
+Bánh Flan Kiểu Pháp,1,0
+Tiramisu Trà Xanh,1,0
+Cơm Chiên Thảo Mộc,1,0
+Bánh Kếp Sữa Chua Trái Cây,1,0
+Kem Dừa Bến Tre,1,0
+Gỏi Nấm Sốt Thái,1,0
+Gỏi Ngó Sen Sốt Chua Ngọt,1,0
+Trà Tắc Xí Muội ,1,0
+Trà Ô Long Tiên Tử,1,0
+Bạc Sỉu ,1,0
+Cafe Đen,1,0
+ Trà Cam Quế Long Nhãn,1,0
+Nước Ép Dưa Hấu,1,0
+Cơm Chiên Cốm Sen,1,0
+Cơm Niêu,1,0
+Cơm Tấm Sườn Bì Chả Chay,1,0
+Mì Ý Sốt Kem,1,0
+Salad Trái Cây,1,0
+Salad Khoai Tây Bắp,1,0
+Bì Cuốn,1,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,1,0
+Chè Hạt Sen Tuyết Yến,1,0
+Dương Chi Cam Lộ,1,0
+COCA/ FANTA CAM/ SPRITE/ SODA,1,0
+Nước Suối Dasani,1,0
+Hủ Tiếu Khô,1,0
+Pad Thái,1,0
+Bún Bò Huế ,1,0
+Cà Ri Nấm,1,0
+Nấm Mối Sốt Hoàng Kim,1,0
+Cơm Trắng Thêm,1,0
+Bánh Mì Thêm,1,0
+Rau Củ Luộc ,1,0
+Cơm Trắng Thêm,1,0
+Bún Thêm,1,0
+Soup Bắp Cải Cuộn,1,0
+Canh Chua Ngó Sen,1,0
+Lẩu Nấm Thái,1,0
+Lẩu Thập Cẩm,1,0
+Lẩu Trường Thọ,1,0
+Lẩu Chao,1,0
+Lẩu Chanh Dây,1,0
+Nấm Nướng Lá Lốt,1,0
+Bánh Xèo,1,0
+Nem Cuốn Bún Gạo Lứt,1,0
+Cháo Nấm,1,0
+Kem Chuối,1,0
+Khoai Lang Chiên Giòn,1,0
+Khoai Môn Sốt Mắm,1,0
+Mì Quảng,1,0
+Pate Nấm Bông Cải Xanh Sốt ,1,0
+Bánh Mì Bơ Tỏi,1,0
+Chả giò chay,1,0
+Đậu hũ chiên giòn,1,0
+Bánh bao chay,1,0
+Khoai tây chiên,1,0
+Xúc xích chay,1,0
+Chả đậu xanh lá lốt,1,0
+Nem chua chay,1,0
+Hạt dẻ rang chay,1,0
+Khoai lang chiên mật ong,1,0
+Snack rong nho chay,1,0
+Snack rong biển chay,1,0
+Cà tím nướng mỡ hành,1,0
+Cà rốt nướng mật ong và hạt điều,1,0
+Xoài dầm nước cốt dừa,1,0
+Thạch rau câu hoa đậu biếc,1,0
+Bánh mochi nhân đậu đỏ,1,0
+Chè khoai dẻo ngũ sắc,1,0
+Bánh khoai môn hấp cốt dừa,1,0
+Kem trái cây sữa chua hạt điều,1,0
+Kem xoài sữa chua Hy Lạp ,1,0
+Kem bơ sữa chua không đường,1,0
+Xoài lắc muối ớt chay,1,0
+Dâu tây phủ socola đen,1,0
+Thạch nha đam trái cây,1,0
+Trái cây ngào đường,1,0
+Bánh Flan Kiểu Pháp,2,0
+Tiramisu Trà Xanh,2,0
+Cơm Chiên Thảo Mộc,2,0
+Bánh Kếp Sữa Chua Trái Cây,2,0
+Kem Dừa Bến Tre,2,0
+Gỏi Nấm Sốt Thái,2,0
+Gỏi Ngó Sen Sốt Chua Ngọt,2,0
+Trà Tắc Xí Muội ,2,0
+Trà Ô Long Tiên Tử,2,0
+Bạc Sỉu ,2,0
+Cafe Đen,2,0
+ Trà Cam Quế Long Nhãn,2,0
+Nước Ép Dưa Hấu,2,0
+Cơm Chiên Cốm Sen,2,0
+Cơm Niêu,2,0
+Cơm Tấm Sườn Bì Chả Chay,2,0
+Mì Ý Sốt Kem,2,0
+Salad Trái Cây,2,0
+Salad Khoai Tây Bắp,2,0
+Bì Cuốn,2,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,2,0
+Chè Hạt Sen Tuyết Yến,2,0
+Dương Chi Cam Lộ,2,0
+COCA/ FANTA CAM/ SPRITE/ SODA,2,0
+Nước Suối Dasani,2,0
+Hủ Tiếu Khô,2,0
+Pad Thái,2,0
+Bún Bò Huế ,2,0
+Cà Ri Nấm,2,0
+Nấm Mối Sốt Hoàng Kim,2,0
+Cơm Trắng Thêm,2,0
+Bánh Mì Thêm,2,0
+Rau Củ Luộc ,2,0
+Cơm Trắng Thêm,2,0
+Bún Thêm,2,0
+Soup Bắp Cải Cuộn,2,0
+Canh Chua Ngó Sen,2,0
+Lẩu Nấm Thái,2,0
+Lẩu Thập Cẩm,2,0
+Lẩu Trường Thọ,2,0
+Lẩu Chao,2,0
+Lẩu Chanh Dây,2,0
+Nấm Nướng Lá Lốt,2,0
+Bánh Xèo,2,0
+Nem Cuốn Bún Gạo Lứt,2,0
+Cháo Nấm,2,0
+Kem Chuối,2,0
+Khoai Lang Chiên Giòn,2,0
+Khoai Môn Sốt Mắm,2,0
+Mì Quảng,2,0
+Pate Nấm Bông Cải Xanh Sốt ,2,0
+Bánh Mì Bơ Tỏi,2,0
+Chả giò chay,2,0
+Đậu hũ chiên giòn,2,0
+Bánh bao chay,2,0
+Khoai tây chiên,2,0
+Xúc xích chay,2,0
+Chả đậu xanh lá lốt,2,0
+Nem chua chay,2,0
+Hạt dẻ rang chay,2,0
+Khoai lang chiên mật ong,2,0
+Snack rong nho chay,2,0
+Snack rong biển chay,2,0
+Cà tím nướng mỡ hành,2,0
+Cà rốt nướng mật ong và hạt điều,2,0
+Xoài dầm nước cốt dừa,2,0
+Thạch rau câu hoa đậu biếc,2,0
+Bánh mochi nhân đậu đỏ,2,0
+Chè khoai dẻo ngũ sắc,2,0
+Bánh khoai môn hấp cốt dừa,2,0
+Kem trái cây sữa chua hạt điều,2,0
+Kem xoài sữa chua Hy Lạp ,2,0
+Kem bơ sữa chua không đường,2,0
+Xoài lắc muối ớt chay,2,0
+Dâu tây phủ socola đen,2,0
+Thạch nha đam trái cây,2,0
+Trái cây ngào đường,2,0
+Bánh Flan Kiểu Pháp,3,0
+Tiramisu Trà Xanh,3,0
+Cơm Chiên Thảo Mộc,3,0
+Bánh Kếp Sữa Chua Trái Cây,3,0
+Kem Dừa Bến Tre,3,0
+Gỏi Nấm Sốt Thái,3,0
+Gỏi Ngó Sen Sốt Chua Ngọt,3,0
+Trà Tắc Xí Muội ,3,1
+Trà Ô Long Tiên Tử,3,0
+Bạc Sỉu ,3,0
+Cafe Đen,3,1
+ Trà Cam Quế Long Nhãn,3,0
+Nước Ép Dưa Hấu,3,1
+Cơm Chiên Cốm Sen,3,0
+Cơm Niêu,3,1
+Cơm Tấm Sườn Bì Chả Chay,3,0
+Mì Ý Sốt Kem,3,0
+Salad Trái Cây,3,1
+Salad Khoai Tây Bắp,3,0
+Bì Cuốn,3,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,3,0
+Chè Hạt Sen Tuyết Yến,3,1
+Dương Chi Cam Lộ,3,0
+COCA/ FANTA CAM/ SPRITE/ SODA,3,0
+Nước Suối Dasani,3,0
+Hủ Tiếu Khô,3,0
+Pad Thái,3,0
+Bún Bò Huế ,3,0
+Cà Ri Nấm,3,0
+Nấm Mối Sốt Hoàng Kim,3,0
+Cơm Trắng Thêm,3,0
+Bánh Mì Thêm,3,0
+Rau Củ Luộc ,3,0
+Cơm Trắng Thêm,3,0
+Bún Thêm,3,0
+Soup Bắp Cải Cuộn,3,0
+Canh Chua Ngó Sen,3,0
+Lẩu Nấm Thái,3,0
+Lẩu Thập Cẩm,3,0
+Lẩu Trường Thọ,3,0
+Lẩu Chao,3,0
+Lẩu Chanh Dây,3,0
+Nấm Nướng Lá Lốt,3,0
+Bánh Xèo,3,0
+Nem Cuốn Bún Gạo Lứt,3,0
+Cháo Nấm,3,0
+Kem Chuối,3,0
+Khoai Lang Chiên Giòn,3,0
+Khoai Môn Sốt Mắm,3,0
+Mì Quảng,3,0
+Pate Nấm Bông Cải Xanh Sốt ,3,0
+Bánh Mì Bơ Tỏi,3,0
+Chả giò chay,3,0
+Đậu hũ chiên giòn,3,0
+Bánh bao chay,3,0
+Khoai tây chiên,3,1
+Xúc xích chay,3,0
+Chả đậu xanh lá lốt,3,0
+Nem chua chay,3,0
+Hạt dẻ rang chay,3,1
+Khoai lang chiên mật ong,3,0
+Snack rong nho chay,3,0
+Snack rong biển chay,3,0
+Cà tím nướng mỡ hành,3,1
+Cà rốt nướng mật ong và hạt điều,3,0
+Xoài dầm nước cốt dừa,3,0
+Thạch rau câu hoa đậu biếc,3,0
+Bánh mochi nhân đậu đỏ,3,0
+Chè khoai dẻo ngũ sắc,3,0
+Bánh khoai môn hấp cốt dừa,3,0
+Kem trái cây sữa chua hạt điều,3,0
+Kem xoài sữa chua Hy Lạp ,3,0
+Kem bơ sữa chua không đường,3,1
+Xoài lắc muối ớt chay,3,0
+Dâu tây phủ socola đen,3,1
+Thạch nha đam trái cây,3,0
+Trái cây ngào đường,3,0
+Bánh Flan Kiểu Pháp,4,0
+Tiramisu Trà Xanh,4,0
+Cơm Chiên Thảo Mộc,4,0
+Bánh Kếp Sữa Chua Trái Cây,4,0
+Kem Dừa Bến Tre,4,0
+Gỏi Nấm Sốt Thái,4,0
+Gỏi Ngó Sen Sốt Chua Ngọt,4,0
+Trà Tắc Xí Muội ,4,0
+Trà Ô Long Tiên Tử,4,0
+Bạc Sỉu ,4,0
+Cafe Đen,4,0
+ Trà Cam Quế Long Nhãn,4,0
+Nước Ép Dưa Hấu,4,0
+Cơm Chiên Cốm Sen,4,0
+Cơm Niêu,4,0
+Cơm Tấm Sườn Bì Chả Chay,4,0
+Mì Ý Sốt Kem,4,0
+Salad Trái Cây,4,0
+Salad Khoai Tây Bắp,4,0
+Bì Cuốn,4,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,4,0
+Chè Hạt Sen Tuyết Yến,4,0
+Dương Chi Cam Lộ,4,0
+COCA/ FANTA CAM/ SPRITE/ SODA,4,0
+Nước Suối Dasani,4,0
+Hủ Tiếu Khô,4,0
+Pad Thái,4,0
+Bún Bò Huế ,4,0
+Cà Ri Nấm,4,0
+Nấm Mối Sốt Hoàng Kim,4,0
+Cơm Trắng Thêm,4,0
+Bánh Mì Thêm,4,0
+Rau Củ Luộc ,4,0
+Cơm Trắng Thêm,4,0
+Bún Thêm,4,0
+Soup Bắp Cải Cuộn,4,0
+Canh Chua Ngó Sen,4,0
+Lẩu Nấm Thái,4,0
+Lẩu Thập Cẩm,4,0
+Lẩu Trường Thọ,4,0
+Lẩu Chao,4,0
+Lẩu Chanh Dây,4,0
+Nấm Nướng Lá Lốt,4,0
+Bánh Xèo,4,0
+Nem Cuốn Bún Gạo Lứt,4,0
+Cháo Nấm,4,0
+Kem Chuối,4,0
+Khoai Lang Chiên Giòn,4,0
+Khoai Môn Sốt Mắm,4,0
+Mì Quảng,4,0
+Pate Nấm Bông Cải Xanh Sốt ,4,0
+Bánh Mì Bơ Tỏi,4,0
+Chả giò chay,4,0
+Đậu hũ chiên giòn,4,0
+Bánh bao chay,4,0
+Khoai tây chiên,4,0
+Xúc xích chay,4,0
+Chả đậu xanh lá lốt,4,0
+Nem chua chay,4,0
+Hạt dẻ rang chay,4,0
+Khoai lang chiên mật ong,4,0
+Snack rong nho chay,4,0
+Snack rong biển chay,4,0
+Cà tím nướng mỡ hành,4,0
+Cà rốt nướng mật ong và hạt điều,4,0
+Xoài dầm nước cốt dừa,4,0
+Thạch rau câu hoa đậu biếc,4,0
+Bánh mochi nhân đậu đỏ,4,0
+Chè khoai dẻo ngũ sắc,4,0
+Bánh khoai môn hấp cốt dừa,4,0
+Kem trái cây sữa chua hạt điều,4,0
+Kem xoài sữa chua Hy Lạp ,4,0
+Kem bơ sữa chua không đường,4,0
+Xoài lắc muối ớt chay,4,0
+Dâu tây phủ socola đen,4,0
+Thạch nha đam trái cây,4,0
+Trái cây ngào đường,4,0
+Bánh Flan Kiểu Pháp,5,0
+Tiramisu Trà Xanh,5,0
+Cơm Chiên Thảo Mộc,5,0
+Bánh Kếp Sữa Chua Trái Cây,5,0
+Kem Dừa Bến Tre,5,0
+Gỏi Nấm Sốt Thái,5,0
+Gỏi Ngó Sen Sốt Chua Ngọt,5,0
+Trà Tắc Xí Muội ,5,0
+Trà Ô Long Tiên Tử,5,0
+Bạc Sỉu ,5,0
+Cafe Đen,5,0
+ Trà Cam Quế Long Nhãn,5,0
+Nước Ép Dưa Hấu,5,0
+Cơm Chiên Cốm Sen,5,0
+Cơm Niêu,5,0
+Cơm Tấm Sườn Bì Chả Chay,5,0
+Mì Ý Sốt Kem,5,0
+Salad Trái Cây,5,0
+Salad Khoai Tây Bắp,5,0
+Bì Cuốn,5,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,5,0
+Chè Hạt Sen Tuyết Yến,5,0
+Dương Chi Cam Lộ,5,0
+COCA/ FANTA CAM/ SPRITE/ SODA,5,0
+Nước Suối Dasani,5,0
+Hủ Tiếu Khô,5,0
+Pad Thái,5,0
+Bún Bò Huế ,5,0
+Cà Ri Nấm,5,0
+Nấm Mối Sốt Hoàng Kim,5,0
+Cơm Trắng Thêm,5,0
+Bánh Mì Thêm,5,0
+Rau Củ Luộc ,5,0
+Cơm Trắng Thêm,5,0
+Bún Thêm,5,0
+Soup Bắp Cải Cuộn,5,0
+Canh Chua Ngó Sen,5,0
+Lẩu Nấm Thái,5,0
+Lẩu Thập Cẩm,5,0
+Lẩu Trường Thọ,5,0
+Lẩu Chao,5,0
+Lẩu Chanh Dây,5,0
+Nấm Nướng Lá Lốt,5,0
+Bánh Xèo,5,0
+Nem Cuốn Bún Gạo Lứt,5,0
+Cháo Nấm,5,0
+Kem Chuối,5,0
+Khoai Lang Chiên Giòn,5,0
+Khoai Môn Sốt Mắm,5,0
+Mì Quảng,5,0
+Pate Nấm Bông Cải Xanh Sốt ,5,0
+Bánh Mì Bơ Tỏi,5,0
+Chả giò chay,5,0
+Đậu hũ chiên giòn,5,0
+Bánh bao chay,5,0
+Khoai tây chiên,5,0
+Xúc xích chay,5,0
+Chả đậu xanh lá lốt,5,0
+Nem chua chay,5,0
+Hạt dẻ rang chay,5,0
+Khoai lang chiên mật ong,5,0
+Snack rong nho chay,5,0
+Snack rong biển chay,5,0
+Cà tím nướng mỡ hành,5,0
+Cà rốt nướng mật ong và hạt điều,5,0
+Xoài dầm nước cốt dừa,5,0
+Thạch rau câu hoa đậu biếc,5,0
+Bánh mochi nhân đậu đỏ,5,0
+Chè khoai dẻo ngũ sắc,5,0
+Bánh khoai môn hấp cốt dừa,5,0
+Kem trái cây sữa chua hạt điều,5,0
+Kem xoài sữa chua Hy Lạp ,5,0
+Kem bơ sữa chua không đường,5,0
+Xoài lắc muối ớt chay,5,0
+Dâu tây phủ socola đen,5,0
+Thạch nha đam trái cây,5,0
+Trái cây ngào đường,5,0
+Bánh Flan Kiểu Pháp,6,0
+Tiramisu Trà Xanh,6,0
+Cơm Chiên Thảo Mộc,6,0
+Bánh Kếp Sữa Chua Trái Cây,6,0
+Kem Dừa Bến Tre,6,0
+Gỏi Nấm Sốt Thái,6,0
+Gỏi Ngó Sen Sốt Chua Ngọt,6,0
+Trà Tắc Xí Muội ,6,0
+Trà Ô Long Tiên Tử,6,0
+Bạc Sỉu ,6,0
+Cafe Đen,6,0
+ Trà Cam Quế Long Nhãn,6,0
+Nước Ép Dưa Hấu,6,0
+Cơm Chiên Cốm Sen,6,0
+Cơm Niêu,6,0
+Cơm Tấm Sườn Bì Chả Chay,6,0
+Mì Ý Sốt Kem,6,0
+Salad Trái Cây,6,0
+Salad Khoai Tây Bắp,6,0
+Bì Cuốn,6,0
+Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,6,0
+Chè Hạt Sen Tuyết Yến,6,0
+Dương Chi Cam Lộ,6,0
+COCA/ FANTA CAM/ SPRITE/ SODA,6,0
+Nước Suối Dasani,6,0
+Hủ Tiếu Khô,6,0
+Pad Thái,6,0
+Bún Bò Huế ,6,0
+Cà Ri Nấm,6,0
+Nấm Mối Sốt Hoàng Kim,6,0
+Cơm Trắng Thêm,6,0
+Bánh Mì Thêm,6,0
+Rau Củ Luộc ,6,0
+Cơm Trắng Thêm,6,0
+Bún Thêm,6,0
+Soup Bắp Cải Cuộn,6,0
+Canh Chua Ngó Sen,6,0
+Lẩu Nấm Thái,6,0
+Lẩu Thập Cẩm,6,0
+Lẩu Trường Thọ,6,0
+Lẩu Chao,6,0
+Lẩu Chanh Dây,6,0
+Nấm Nướng Lá Lốt,6,0
+Bánh Xèo,6,0
+Nem Cuốn Bún Gạo Lứt,6,0
+Cháo Nấm,6,0
+Kem Chuối,6,0
+Khoai Lang Chiên Giòn,6,0
+Khoai Môn Sốt Mắm,6,0
+Mì Quảng,6,0
+Pate Nấm Bông Cải Xanh Sốt ,6,0
+Bánh Mì Bơ Tỏi,6,0
+Chả giò chay,6,0
+Đậu hũ chiên giòn,6,0
+Bánh bao chay,6,0
+Khoai tây chiên,6,0
+Xúc xích chay,6,0
+Chả đậu xanh lá lốt,6,0
+Nem chua chay,6,0
+Hạt dẻ rang chay,6,0
+Khoai lang chiên mật ong,6,0
+Snack rong nho chay,6,0
+Snack rong biển chay,6,0
+Cà tím nướng mỡ hành,6,0
+Cà rốt nướng mật ong và hạt điều,6,0
+Xoài dầm nước cốt dừa,6,0
+Thạch rau câu hoa đậu biếc,6,0
+Bánh mochi nhân đậu đỏ,6,0
+Chè khoai dẻo ngũ sắc,6,0
+Bánh khoai môn hấp cốt dừa,6,0
+Kem trái cây sữa chua hạt điều,6,0
+Kem xoài sữa chua Hy Lạp ,6,0
+Kem bơ sữa chua không đường,6,0
+Xoài lắc muối ớt chay,6,0
+Dâu tây phủ socola đen,6,0
+Thạch nha đam trái cây,6,0
+Trái cây ngào đường,6,0

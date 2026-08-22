@@ -1,0 +1,1184 @@
+version: "3.1"
+
+nlu:
+# =========================
+# 1. CHÀO HỎI CƠ BẢN
+# =========================
+
+- intent: greet
+  examples: |
+    - chào
+    - xin chào
+    - chào bạn
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+    - hello
+    - xin chào, cho tôi hỏi một chút
+    - xin chào, bạn rảnh ko
+    - hi
+    - alo
+    - alo alo
+    - có ai không
+    - he
+    - ê
+    - ey
+    - êy
+    - yo
+    - hú
+    - hay
+    - ayzo
+    - ad ơi
+    - bạn ơi
+    - quán ơi
+    - có ai online ko
+    - hỗ trợ mình với
+    - cho mình hỏi
+    - good morning
+    - good evening
+    - good afternoon
+    - chào admin
+    - xin chào nhà hàng
+    - hello shop
+    - có nhân viên trực không
+    - hi bot
+    - mình cần hỗ trợ
+    - alo nhà hàng nghe rõ trả lời
+    - xin chào trợ lý ảo
+    - chào bạn nhé
+    - hey
+    - hi there
+    - chào mừng
+    - xin chào hệ thống
+    - hello nhà hàng chay
+    - chào cả nhà
+    - mình cần tư vấn
+    - xin chào nhân viên
+    - hi em
+    - chào quán
+    - xin chào trợ lý
+    - hey bot
+    - mình muốn hỏi chút
+    - hello support
+    - chào admin nhà hàng
+    - có ai không ạ
+    
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - bái bai
+    - bye
+    - bye bye
+    - goodbye
+    - bye nhé
+    - baii
+    - hẹn gặp lại
+    - hẹn gặp quán lần sau
+    - mình sẽ quay lại
+    - tạm biệt nhé
+    - mình out đây
+    - hẹn gặp lại nhân viên
+    - bye nhà hàng
+    - tạm biệt hệ thống
+    - hẹn lần sau nhé
+    - bye admin
+    - tạm biệt quán
+    - mình sẽ ghé lại
+    - bye hệ thống
+    - mình kết thúc nhé
+    - tạm biệt trợ lý
+    - mình off đây
+    - hẹn gặp lại quán
+    - tạm biệt bot
+    - hẹn sớm gặp lại
+    - bye bye nha
+    - mình dừng ở đây
+    - tạm biệt mọi người
+    - hẹn gặp lại nhà hàng
+
+- intent: thank
+  examples: |
+    - cảm ơn
+    - cám ơn
+    - cám ơn bạn
+    - cảm ơn nha
+    - cảm ơn nhà hàng
+    - ok cám ơn bạn
+    - cảm ơn support
+    - cám ơn đã hỗ trợ
+    - cám ơn bạn nhiều nha
+    - cảm ơn đã trả lời
+    - thanks
+    - thank you
+    - Ok, thanks
+    - Cảm ơn bạn đã tư vấn
+    - Mình cảm ơn sự hỗ trợ
+    - Thật sự cảm ơn
+    - Cảm ơn, giúp mình hiểu rõ hơn
+    - Cám ơn, bạn thật tuyệt
+
+- intent: bot_challenge
+  examples: |
+    - bạn là bot à
+    - bạn là người hay bot
+    - bạn là gì
+    - bạn là ai vậy
+    - bạn là người à
+    - bạn là AI hay con người
+    - are you a bot
+    - am i talking to a bot
+    - bạn có phải là robot không
+    - bạn có thật sự là con người không
+    - tôi đang nói chuyện với bot phải không
+    - bạn có phải chatbot không
+    - bạn là trí tuệ nhân tạo à
+    - bạn có phải AI không
+    - tôi đang chat với bot hay người
+    - bạn có tự nhận là bot không
+    - có ai đang trả lời tôi không hay là bot
+    - bạn là chương trình hay người thật
+
+# =========================
+# 2. THÔNG TIN NHÀ HÀNG
+# =========================
+
+- intent: ask_open_time
+  examples: |
+    - quán mở cửa lúc mấy giờ
+    - quán đóng cửa lúc mấy giờ
+    - nhà hàng mở cửa lúc mấy giờ
+    - giờ hoạt động là gì
+    - giờ hoạt động của nhà hàng như nào
+    - hôm nay có mở cửa không
+    - có mở cuối tuần không
+    - có mở buổi tối không
+    - có mở buổi trưa không
+    - giờ hoạt động
+
+- intent: ask_location
+  examples: |
+    - Nhà hàng ở đâu?
+    - Quán tọa lạc ở đâu?
+    - Địa chỉ chi tiết của nhà hàng là gì?
+    - Có chi nhánh ở đâu không?
+    - Làm sao để tới nhà hàng?
+    - Làm sao để đến nhà hàng?
+    - Bạn có thể chỉ đường tới quán không?
+    - Tôi muốn biết vị trí quán.
+    - Quán nằm trên đường nào?
+    - Tôi không biết đường tới quán, bạn hướng dẫn giúp.
+    - Nhà hàng có dễ tìm không?
+    - Tôi muốn tới chi nhánh chính của quán.
+    - Nhà hàng ở khu vực nào?
+    - Quán gần các địa điểm nổi tiếng nào?
+    - Nhà hàng gần bến xe hoặc ga tàu nào?
+    - Nhà hàng ở gần khu dân cư nào?
+    - Tôi cần chỉ đường chi tiết tới nhà hàng.
+    - Tôi muốn biết vị trí chi nhánh gần nhất.
+    - Địa chỉ quán có đầy đủ số nhà không?
+  
+- intent: ask_contact
+  examples: |
+    - số điện thoại là gì
+    - liên hệ nhà hàng như thế nào
+    - có hotline không
+    - làm sao để gọi nhà hàng
+    - gửi email tới nhà hàng được không
+    - địa chỉ email của nhà hàng là gì
+    - Facebook của nhà hàng là gì
+    - có Zalo để liên hệ không
+    - tôi muốn biết cách thức liên hệ nhà hàng như số điện thoại hay email để tiện trao đổi
+    - muốn hỏi thông tin liên hệ
+    - nhà hàng hỗ trợ qua số nào
+    - số hotline còn dùng được không
+    - tôi muốn nhắn tin tới nhà hàng
+    - làm sao liên hệ Hương Sen
+    - có cách liên hệ trực tuyến không
+    - có số điện thoại đặt món không
+    - email hỗ trợ của nhà hàng là gì
+    - có fanpage Facebook không
+    - hotline của nhà hàng là gì để tôi gọi trực tiếp để trao đổi
+    - liên hệ nhanh nhất bằng cách nào
+    - tôi muốn liên hệ nhà hàng
+    - làm sao để gửi tin nhắn tới nhà hàng
+    - có thể gọi đặt bàn không
+    - số điện thoại đặt món là gì
+    - gửi email hỏi thông tin được không
+    - Facebook Hương Sen là gì
+    - có Zalo hỗ trợ không
+    - nhà hàng có các thông tin liên hệ nào vậy, gửi tôi hết đi
+    - muốn nhắn tin qua Zalo
+    - nhà hàng có tư vấn trực tuyến không
+    - làm sao để liên hệ nhanh nhất
+    - tôi cần số điện thoại gấp
+    - nhà hàng có chat trực tiếp trên Facebook không
+
+- intent: restaurant_policy
+  examples: |
+    - chính sách của nhà hàng là gì
+    - nhà hàng có những chính sách gì
+    - quy định của quán là gì
+    - quy định của nhà hàng là gì
+    - có thể cho tôi biết về quy định nhà hàng không
+    - Nội quy về hút thuốc trong quán ra sao?
+    - các điều khoản dùng bữa ở đây là gì
+    - tôi muốn xem nội quy nhà hàng
+    - nhà hàng có cho phép mang đồ ăn ngoài không
+    - chính sách giữ chỗ như thế nào
+    - tôi cần nắm rõ chính sách nhà hàng
+    - nhà hàng có quy định gì về mang thú cưng không
+    - tôi cần xem điều khoản dịch vụ
+    - tôi muốn biết nội quy phục vụ khách
+    - nhà hàng có những quy định gì
+    - nội quy phục vụ tại nhà hàng
+    - có thể cho tôi biết các điều khoản sử dụng không
+    - có thể xem các quy định của nhà hàng không
+
+
+# =========================
+# 3. ĐẶT BÀN
+# =========================
+
+- intent: buying_guide
+  examples: |
+    - hướng dẫn đặt bàn
+    - hướng dẫn đặt món
+    - làm thế nào để đặt bàn
+    - làm thế nào để gọi món
+    - quy trình đặt bàn như thế nào
+    - đặt bàn ra sao
+    - cách đặt bàn 
+    - cần gì để đặt bàn
+    - tôi muốn đặt tiệc chay
+    - làm thế nào để đặt món online
+    - hướng dẫn tôi cách đặt bàn với
+    - tôi muốn biết cách gọi món
+    - quy trình đặt tiệc như thế nào
+    - hướng dẫn chi tiết cách đặt món giúp tôi
+    - tôi có thể gọi món bằng cách nào
+    - làm sao để hoàn tất đặt bàn
+    - cách thức đặt món trên app là gì
+    - tôi cần trợ giúp về cách gọi món
+    - cần làm gì để hoàn tất quá trình đặt tiệc
+    - tôi muốn đặt món cho 4 người
+    - hướng dẫn đặt món qua web
+    - làm sao để chọn món trong thực đơn
+    - tôi cần biết các bước đặt bàn
+    - nhà hàng hỗ trợ đặt món thế nào
+    - tôi có thể đặt món qua tin nhắn không
+    - hướng dẫn đặt bàn cho nhóm đông
+    - tôi muốn biết cách thêm món vào đơn
+    - tôi cần hướng dẫn đặt món chay
+    - cách đặt tiệc sinh nhật chay thế nào
+    - tôi cần biết cách chọn set menu
+    - hướng dẫn đặt món cho người mới
+    - làm sao để xác nhận đơn đặt bàn
+    - tôi cần trợ giúp đặt món online
+    - làm thế nào để đặt món cho gia đình
+    - hướng dẫn tôi đặt bàn cuối tuần
+
+- intent: ask_deposit_policy
+  examples: |
+    - đặt bàn có cần cọc không
+    - có cần đặt cọc không
+    - cọc bao nhiêu tiền
+    - phải trả trước bao nhiêu
+    - giữ bàn có cần cọc trước không
+    - đặt bàn trước có cần cọc không
+    - tiền cọc đặt bàn là bao nhiêu
+    - tiền cọc để giữ chỗ là bao nhiêu
+    - chính sách cọc của nhà hàng
+    - đặt bàn online có cần cọc không
+    - đặt bàn trước có phải cọc không
+    - tiền cọc là bao nhiêu
+    - cọc giữ chỗ bao nhiêu phần trăm
+
+
+- intent: ask_cancellation_policy
+  examples: |
+    - đặt bàn ở đây có được hủy không
+    - điều kiện để hoàn cọc là gì
+    - nhà hàng có hỗ trợ hủy đơn hay không
+    - nếu không đến được, tôi có thể hủy bàn không
+    - tôi muốn biết chi tiết về cách hủy đặt bàn
+    - khi nào tôi được hoàn tiền nếu hủy tiệc
+    - quy định hủy đặt bàn như thế nào
+    - tôi muốn hủy đơn
+    - làm thế nào để hủy đặt tiệc
+    - tôi có thể hủy bàn không
+    - nhà hàng có phạt khi hủy muộn không
+    - tôi cần biết thời hạn hủy đặt
+    - nhà hàng có linh hoạt giờ hủy không
+    - quy định hoàn tiền cọc ra sao
+    - tôi muốn biết phí hủy đặt
+    - có được hủy qua tin nhắn không
+    - nhà hàng có xác nhận hủy không
+    - tôi cần hủy gấp được không
+    - có hỗ trợ hủy đặt online không
+    - tôi có thể hủy bàn cho nhóm không
+    - tôi cần biết thủ tục hủy đặt bàn
+    - có được hủy qua hotline không
+    - tôi muốn hủy đặt bàn cuối tuần
+
+# =========================
+# 4. THANH TOÁN
+# =========================
+
+- intent: ask_payment_methods
+  examples: |
+    - có những phương thức thanh toán nào
+    - thanh toán bằng gì
+    - có tiền mặt không
+    - có chuyển khoản không
+    - có ví điện tử không
+    - Tôi có thể thanh toán bằng cách nào
+    - Ở đây có chấp nhận những hình thức thanh toán nào
+    - Nhà hàng hỗ trợ thanh toán qua những phương thức nào
+    - Có thể thanh toán bằng tiền mặt không
+    - Có thanh toán qua thẻ tín dụng không
+    - Nhà hàng có chấp nhận ví điện tử không
+    - Tôi có thể trả qua MoMo không
+    - Có thể dùng VNPay để thanh toán không
+    - Nhà hàng có chấp nhận thẻ ATM không
+    - Tôi có thể thanh toán qua chuyển khoản không
+    - Phương thức thanh toán online là gì
+    - Có hỗ trợ thanh toán qua PayPal không
+    - Tôi muốn biết các lựa chọn thanh toán
+    - Có thể thanh toán bằng ZaloPay không
+    - Có phương thức nào thanh toán trả góp không
+    - Nhà hàng có chấp nhận thanh toán quốc tế không
+    - Tôi có thể dùng thẻ ghi nợ để thanh toán không
+    - Có những hình thức thanh toán trực tuyến nào
+    - Tôi có thể quẹt thẻ tại bàn không
+    - Có hỗ trợ xuất hóa đơn đỏ không
+    - Tôi có thể trả bằng USD không
+
+# =========================
+# 5. MENU & MÓN ĂN
+# =========================
+
+- intent: ask_menu
+  examples: |
+    - quán có món gì
+    - menu quán gồm những gì
+    - cho tôi xem menu
+    - cho tôi xem menu đi
+    - cho tôi xem thực đơn đi
+    - menu nhà hàng gồm những gì
+    - quán bán món gì
+    - menu có đầy đủ không
+    - thực đơn gồm những gì vậy 
+    - menu có bao nhiêu món
+    - gửi menu giúp tôi
+    - xem thực đơn
+    - menu chi tiết
+    - Bạn có thể cho tôi biết thực đơn có bao nhiêu dòng món không
+    - cho tôi xem menu
+    - Có tất cả bao nhiêu danh mục món trên trang
+    - Thực đơn của bạn có những món nào 
+    - Quán của bạn cung cấp bao nhiêu loại món
+    - nhà hàng có nhiều món không
+    - Món của bạn được chia thành bao nhiêu loại
+    - Tôi muốn biết có mấy danh mục được bán
+    - Thực đơn có cung cấp danh sách các loại món không
+    - Danh mục món gồm những gì
+    - Tôi cần biết có bao nhiêu loại món trên thực đơn
+    - cho mình xem menu với
+    - Có tất cả bao nhiêu danh mục món
+    - Danh sách các loại mặt hàng gồm những gì
+    - Có mấy danh mục món trên menu
+    - Menu của bạn gồm những gì
+    - Quán có những nhóm món nào
+    - Đồ chay của bạn được chia thành bao nhiêu loại
+    - Danh mục món chay của bạn gồm gì
+    - Trang này có mấy danh mục món
+    - Danh mục món được phân chia thế nào
+    - Tôi muốn xem danh sách các loại món chay
+    - Danh sách món chay trên thực đơn gồm gì
+    - Có thể cho biết có bao nhiêu nhóm món chay không
+    - Có thể cho biết các loại món trên thực đơn không
+    - Bạn có thể liệt kê danh mục món không
+    - nhà hàng có món gì
+    - Cho tôi biết chi tiết danh mục món gồm 
+
+# =========================
+# 5.1. MÓN ĂN
+# =========================
+  #---------#
+  #   Lẩu   #
+  #---------#
+- intent: ask_hotpot
+  examples: |
+    - quán có lẩu gì
+    - cho tôi biết về danh mục các loại lẩu của nhà hàng
+    - danh mục lẩu 
+    - danh mục lẩu của nhà hàng
+    - các loại lẩu của quán là gì
+    - các loại lẩu của nhà hàng là gì
+    - trong các lẩu tại nhà hàng có lẩu ít béo và ngọt không
+    - lẩu giá bao nhiêu
+    - lẩu nào phù hợp đi nhóm
+    - lẩu nào rẻ nhất
+    - lẩu nào đặc biệt nhất
+    - lẩu có cay không
+    - lẩu có phù hợp ăn gia đình không
+    - lẩu có ngọt không
+    - lẩu có béo không
+    - lẩu có dễ ăn không
+    - lẩu nào bán chạy nhất
+    - lẩu signature là gì
+    - lẩu có phù hợp người ăn kiêng không
+    - Cho tôi biết các loại lẩu của nhà hàng
+    - nhà hàng có lẩu gì
+    - quán có bao nhiêu loại lẩu
+    - lẩu ở đây gồm những gì
+    - có những loại lẩu nào vậy
+    - lẩu của quán có đa dạng không
+    - có thể giới thiệu các loại lẩu không
+    - lẩu bên bạn có gì đặc biệt
+    - lẩu ở đây có gì ngon
+    - lẩu nào được nhiều người gọi
+    - lẩu nào dễ ăn nhất
+    - lẩu nào phù hợp cho người mới ăn chay
+    - lẩu nào không cay
+    - lẩu nào có vị thanh
+    - lẩu nào phù hợp cho gia đình
+    - lẩu nào hợp ăn buổi tối
+    - lẩu nào ăn không bị ngán
+    - lẩu nào phù hợp cho 2 người
+    - lẩu nào dành cho nhóm đông
+    - lẩu nào có nhiều rau
+    - lẩu nào ít dầu mỡ
+    - lẩu nào tốt cho sức khỏe
+    - lẩu có những mức giá nào
+    - lẩu có size nhỏ không
+    - lẩu có phần cho 1 người không
+    - lẩu có thể gọi thêm nước dùng không
+    - lẩu có thể gọi thêm topping không
+
+  #-------------#
+  #   Khai vị   #
+  #-------------#
+- intent: ask_appetizer
+  examples: |
+    - có món khai vị gì
+    - khai vị gồm những món nào
+    - menu khai vị có gì
+    - cho tôi xem các món khai vị
+    - có thể giới thiệu món khai vị không
+    - khai vị bên bạn có gì đặc biệt
+    - các món khai vị ở đây gồm gì
+    - khai vị có đa dạng không
+    - có bao nhiêu món khai vị
+    - khai vị có những loại nào
+    - món khai vị nào ít béo nhất
+    - món khai vị nào được nhiều người gọi
+    - món khai vị nào bán chạy
+    - món khai vị nào dễ ăn
+    - món khai vị nào nhẹ nhàng
+    - món khai vị nào phù hợp người mới
+    - món khai vị nào ít dầu mỡ
+    - món khai vị nào không cay
+    - món khai vị nào cay nhẹ
+    - món khai vị có cay không
+    - món khai vị có béo không
+    - món khai vị có ngọt không
+    - món khai vị có dễ ăn không
+    - món khai vị có phù hợp ăn kiêng không
+    - món khai vị nào healthy
+    - món khai vị nào tốt cho sức khỏe
+    - món khai vị nào ít calo
+    - món khai vị nào nhiều rau
+    - món khai vị nào ăn không ngán
+    - món khai vị nào hợp ăn nhẹ
+    - món khai vị nào hợp ăn trước bữa chính
+    - món khai vị nào hợp với món chính
+    - món khai vị nào ăn kèm ngon
+    - món khai vị nào phù hợp cho 2 người
+    - món khai vị nào cho nhóm 3-4 người
+    - món khai vị nào cho nhóm đông
+    - món khai vị nào rẻ nhất
+    - giá các món khai vị như thế nào
+    - khai vị có giá khoảng bao nhiêu
+    - các món khai vị có đắt không
+    - khai vị hôm nay có gì
+    - có món khai vị mới không
+    - có món khai vị đặc trưng không
+    - món khai vị nổi bật là gì
+    - món khai vị nào ít người biết nhưng ngon
+    - có món khai vị nào ít mặn không
+    - có món khai vị nào thanh đạm không
+    - có món khai vị nào dễ tiêu không
+    - món khai vị nào phù hợp buổi trưa
+    - món khai vị nào phù hợp buổi tối
+    - món khai vị nào phù hợp cho gia đình
+    - món khai vị nào hợp cho bạn bè
+    - món khai vị nào nên thử
+    - gợi ý vài món khai vị
+
+
+  #---------------#
+  #   Món chính   #
+  #---------------#
+- intent: ask_main_dish
+  examples: |
+    - có món chính gì
+    - các danh mục món chính gồm
+    - các loại món chính hiện tại là
+    - món chính gồm những món nào
+    - nhà hàng có bao nhiêu món chính
+    - trong món chính có những loại nào
+    - món chính được chia thành những nhóm nào
+    - các món chính phổ biến là gì
+    - món chính có đa dạng không
+    - có những lựa chọn món chính nào
+    - món chính giá bao nhiêu
+    - giá các món chính khoảng bao nhiêu
+    - món chính có đắt không
+    - món chính có hợp túi tiền không
+    - món chính nào no nhất
+    - món chính nào ít béo
+    - món chính có cháo không
+    - món chính nào đặc trưng
+    - món chính có cay không
+    - món chính có béo không
+    - món chính có healthy không
+    - món chính có phù hợp ăn kiêng không
+    - món chính nào nhiều rau
+    - hôm nay món chính gồm gì
+    - các món chính hiện có
+    - món chính nào được yêu thích
+    - món chính nào bán chạy
+    - món chính ăn no nhất
+    - món chính phù hợp cho 2 người
+    - món chính cho nhóm 4 người
+    - món chính ít dầu mỡ
+    - món chính nào nổi bật
+    - món chính nào nhẹ bụng
+    - món chính ít béo
+    - món chính healthy
+    - món chính nhiều rau
+    - món chính không cay
+    - món chính cay vừa
+    - món chính béo vừa
+    - món chính tốt cho sức khỏe
+    - món chính dành cho ăn kiêng
+    - món chính ăn trưa nên gọi gì
+    - món chính ăn tối nên gọi gì
+    - combo món chính cho 3 người
+    - combo món chính cho gia đình
+    - combo món chính cho nhóm bạn
+    - món chính ăn kèm gì
+    - món chính có dễ ăn không
+    - món chính có phù hợp trẻ em không
+    - món chính có phù hợp người lớn tuổi không
+    - món chính nào phổ biến
+    - món chính nào được đánh giá cao
+    - món chính có nhiều lựa chọn không
+    - món chính có thay đổi theo ngày không
+    - món chính có phù hợp ăn nhanh không
+    - món chính có phục vụ nhanh không
+
+  #---------------------#
+  #   Món tráng miệng   #
+  #---------------------#
+- intent: ask_dessert
+  examples: |
+    - có món tráng miệng gì
+    - trong các món tráng miệng, có món ngọt nào
+    - trong các món tráng miệng, có món ăn vặt gì
+    - trong các món tráng miệng, có bánh không
+    - trong các món tráng miệng, có món nào ăn nhẹ sau bữa
+    - món nào phù hợp tráng miệng
+    - trong các món tráng miệng, có món nào ít ngọt không
+    - trong các món tráng miệng, có món nào mát không
+    - tráng miệng nào ít ngọt hoặc không đường
+    - tráng miệng nào bán chạy
+    - danh mục các món tráng miệng là
+    - các món tráng miệng hiện tại là
+    - món tráng miệng gồm những món nào
+    - mô tả các món tráng miệng
+    - gợi ý vài món tráng miệng
+    - hôm nay có món tráng miệng gì
+    - món ngọt nào được nhiều người thích
+    - món tráng miệng có ngon không
+    - món tráng miệng có béo không
+    - món tráng miệng có mềm không
+    - món tráng miệng có mát không
+    - món tráng miệng có hấp dẫn không
+    - trong các món tráng miệng, món ăn vặt nào hấp dẫn
+    - món tráng miệng nào ít đường
+    - món tráng miệng mát lạnh
+    - món tráng miệng nhiều trái cây
+    - gợi ý món tráng miệng cho trẻ em
+    - món tráng miệng bán chạy nhất
+    - món tráng miệng phù hợp sau bữa
+    - danh mục các món tráng miệng hôm nay
+    - các món tráng miệng hiện có
+    - trong các món tráng miệng, mô tả món ngọt ở quán
+    - món tráng miệng dễ ăn
+    - món tráng miệng cho 2 người
+    - món tráng miệng cho nhóm 4 người
+    - món tráng miệng chay ngon
+    - món tráng miệng có thơm không
+    - món tráng miệng thích hợp mùa hè
+    - món tráng miệng có nhiều lựa chọn không
+    - món tráng miệng có phù hợp ăn kiêng không
+    - món tráng miệng nào nhẹ bụng
+    - món tráng miệng nào dễ ăn nhất
+    - món tráng miệng có ngọt gắt không
+    - món tráng miệng có thanh mát không
+    - món tráng miệng có phù hợp mọi lứa tuổi không
+    - món tráng miệng có thể ăn chung không
+    - món tráng miệng có phục vụ nhanh không
+    - món tráng miệng có thay đổi theo ngày không
+    - món tráng miệng có đa dạng không
+    - món tráng miệng có phù hợp ăn sau bữa chính không
+
+  #-------------#
+  #   Đồ uống   #
+  #-------------#
+- intent: ask_drink
+  examples: |
+    - có đồ uống gì
+    - có nước uống gì
+    - các loại nước hiện tại gồm
+    - danh mục các món nước là
+    - các loại nước hiện có gồm
+    - nhà hàng có những món nước nào
+    - quán có nước gì
+    - trong nước uống, có nước ép không
+    - trong nước uống, có sinh tố không
+    - trong nước uống, có trà không
+    - có cà phê không
+    - có nước giải khát không
+    - có nước nào mát không
+    - có nước nào ít đường không
+    - có nước nào healthy không
+    - giá các loại nước là bao nhiêu
+    - đồ uống có đắt không
+    - đồ uống có ngon không
+    - nước uống có dễ uống không
+    - có nước nào phổ biến không
+    - nước nào bán chạy
+    - trong đồ uống có trà sữa không
+    - trong đồ uống có sinh tố không
+    - nước nào ít calo
+    - nước nào không đường
+    - nước nào phù hợp ăn kiêng
+    - nước nào uống giải nhiệt
+    - nước nào uống buổi tối
+    - nước nào uống buổi sáng
+    - đồ uống có đá không
+    - đồ uống có nóng không
+    - có đồ uống nóng không
+    - có đồ uống lạnh không
+    - nước uống có đa dạng không
+    - có nhiều lựa chọn nước không
+    - nước uống có phù hợp trẻ em không
+    - nước uống có phù hợp người lớn tuổi không
+    - đồ uống có phục vụ nhanh không
+    - đồ uống có thay đổi theo ngày không
+    - nước uống có tươi không
+    - nước uống có tốt cho sức khỏe không
+
+  #------------------#
+  #   Món gọi thêm   #
+  #------------------#
+- intent: ask_extra_food
+  examples: |
+    - có món thêm gì
+    - danh mục các món thêm là
+    - các món thêm gồm những món nào
+    - muốn gọi thêm món
+    - có thêm gì để ăn kèm không
+    - menu món phụ là gì
+    - giá các món thêm là bao nhiêu
+    - món thêm có đắt không
+    - các món thêm có đa dạng không
+    - có món chiên thêm không
+    - có món nướng thêm không
+    - có món cuốn thêm không
+    - có món tráng miệng thêm không
+    - có món rau thêm không
+    - có món canh thêm không
+    - có món ăn nhẹ thêm không
+    - có món giòn thêm không
+    - có đồ ăn vặt thêm không
+    - có món thêm cho trẻ em không
+    - có món thêm cho nhóm không
+    - có món ăn kèm với món chính không
+    - có thể gọi thêm nước chấm không
+    - các món ăn phụ thêm gồm gì
+    - gọi thêm cho bữa chính như thế nào
+    - có combo món thêm không
+    - món thêm nào giá rẻ
+    - món thêm nào phổ biến
+    - món thêm nào được gọi nhiều
+    - món thêm có dễ ăn không
+    - món thêm có phục vụ nhanh không
+    - món thêm có thay đổi theo ngày không
+    - món thêm có phù hợp ăn kèm không
+    - món thêm có nhiều lựa chọn không
+    - món thêm có phù hợp mọi lứa tuổi không
+    - hôm nay có món thêm gì mới
+
+# =========================
+# 6. TÌM MÓN
+# =========================
+
+- intent: find_dishes_by_name
+  examples: |
+    - tôi muốn ăn [lẩu chay](dish_name)
+    - có [gỏi cuốn chay](dish_name) không
+    - tìm món [bún chay](dish_name)
+    - có [cơm chiên chay](dish_name) không
+    - tôi muốn gọi [canh chua chay](dish_name)
+    - có [mì xào chay](dish_name) không
+    - có món [nấm kho](dish_name) không
+    - tìm món [đậu hũ chiên](dish_name)
+    - có [salad chay](dish_name) không
+    - Tôi muốn mua [Lẩu Trường Thọ](dish_name)
+    - Hãy tìm cho tôi [Lẩu Nấm Thái](dish_name)
+    - Tôi đang tìm [Lẩu Thập Cẩm](dish_name)
+    - Có [Lẩu Chao](dish_name) nào không
+    - Làm ơn tìm giúp tôi [Lẩu Chanh Dây](dish_name)
+    - Tôi cần [Nem Cuốn Bún Gạo Lứt](dish_name)
+    - Tôi đang cần [Nấm Nướng Lá Lốt](dish_name)
+    - Có [Bánh Xèo](dish_name) nào không
+    - Tôi muốn đặt mua [Tàu Hủ Ky Cuốn Kiểu Bắc Kinh](dish_name)
+    - Bạn có thể tìm [Gỏi Nấm Sốt Thái](dish_name) cho tôi không
+    - Hãy tìm [Gỏi Ngó Sen Sốt Chua Ngọt](dish_name) cho tôi
+    - Tôi muốn xem các mẫu [Salad Khoai Tây Bắp](dish_name)
+    - Tôi cần mua [Salad Trái Cây](dish_name)
+    - Có [Bì Cuốn](dish_name) nào phù hợp không
+    - Tôi muốn xem các mẫu [Pate Nấm Bông Cải Xanh Sốt](dish_name)
+    - Bạn có thể tìm [Mì Quảng](dish_name) giúp tôi không
+    - Tôi đang tìm [Nấm Mối Sốt Hoàng Kim](dish_name)
+    - Có thể tìm giúp tôi [Cà Ri Nấm](dish_name) không
+    - Tôi đang cần [Pad Thái](dish_name)
+    - Làm ơn tìm [Mì Ý Sốt Kem](dish_name) giúp tôi
+    - Tôi cần mua [Cơm Niêu](dish_name)
+    - Có [Cơm Chiên Cốm Sen](dish_name) nào đẹp không
+    - Tôi đang tìm [Bún Bò Huế](dish_name)
+    - Tôi muốn mua [Cơm Chiên Thảo Mộc](dish_name)
+    - Hãy tìm [Cơm Tấm Sườn Bì Chả Chay](dish_name) giúp tôi
+    - Tôi cần [Cháo Nấm](dish_name) gấp
+    - Bạn có mẫu [Hủ Tiếu Khô](dish_name) nào không
+    - Tôi muốn xem [Chè Hạt Sen Tuyết Yến](dish_name)
+    - Có [Tiramisu Trà Xanh](dish_name) nào đẹp không
+    - Tôi đang cần [Bánh Kép Sữa Chua Trái Cây](dish_name)
+    - Tôi muốn tìm [Dương Chi Cam Lộ](dish_name)
+    - Có [Bánh Mì Bơ Tỏi](dish_name) nào phù hợp không
+    - Tôi cần mua [Bánh Flan Kiểu Pháp](dish_name)
+    - Làm ơn tìm [Kem Dừa Bến Tre](dish_name) cho tôi
+    - Hãy tìm [Kem Chuối](dish_name) giúp tôi
+    - Tôi muốn đặt mua [Khoai Lang Chiên Giòn](dish_name)
+    - Có [Khoai Môn Sốt Mắm](dish_name) nào không
+    - Tôi đang tìm [Trà Cam Quế Long Nhãn](dish_name)
+    - Bạn có thể tìm [Trà Ô Long Tiên Tử](dish_name) giúp tôi không
+    - Tôi muốn xem các mẫu [Bạc Sỉu](dish_name)
+    - Có [Nước Ép Dưa Hấu](dish_name) nào không
+    - Tôi muốn mua [Trà Tắc Xí Muội](dish_name)
+    - Hãy tìm cho tôi [Cafe Đen](dish_name)
+    - Tôi đang tìm [COCA](dish_name)
+    - Có [FANTA](dish_name) nào không
+    - Tìm giúp tôi [SPRITE](dish_name)
+    - Tôi muốn mua [SODA](dish_name)
+    - Tìm cho tôi [Nước Suối Dasani](dish_name)
+    - Tôi đang cần [Soup Bắp Cải Cuộn](dish_name)
+    - Bạn có [Canh Chua Ngó Sen](dish_name) không
+    - Tôi muốn tìm [Rau Củ Luộc](dish_name)
+    - Hãy giúp tôi tìm [Cơm Trắng Thêm](dish_name)
+    - Tôi cần [Bún Thêm](dish_name)
+    - Tôi muốn mua [Mì Thêm](dish_name)
+    - Bạn có [Bánh Mì Thêm](dish_name) không
+
+- intent: find_dishes_by_category
+  examples: |
+    - tôi muốn xem các món [lẩu](category_name)
+    - có món [bún](category_name) không
+    - cho tôi xem món [cơm](category_name)
+    - danh mục [salad](category_name) gồm
+    - Tôi muốn xem các món trong danh mục [Lẩu](category_name)
+    - Bạn có món trong danh mục [Món khai vị](category_name) không
+    - Hãy cho tôi xem các món trong danh mục [Món chính](category_name)
+    - Có món trong danh mục [Đồ uống](category_name) không
+    - Các món trong danh mục [Món tráng miệng](category_name) là gì
+    - Tôi cần tìm món trong danh mục [Món gọi thêm](category_name)
+    - Cho tôi xem các món trong danh mục [Mẹt Cuốn](category_name)
+    - Bạn có món trong danh mục [Chưa phân loại](category_name) không
+    - Hãy giới thiệu các món trong danh mục [Lẩu](category_name)
+    - Tôi muốn xem các món trong danh mục [Món chính](category_name)
+    - Có món nào trong danh mục [Món khai vị](category_name) không
+    - Bạn có [Đồ uống](category_name) nào không
+    - Tôi muốn xem các món trong danh mục [Món tráng miệng](category_name)
+    - Hãy cho tôi xem các món trong danh mục [Món gọi thêm](category_name)
+    - Tôi đang tìm món trong danh mục [Mẹt Cuốn](category_name)
+    - Bạn có [Lẩu](category_name) không
+    - Có món trong danh mục [Món chính](category_name) không
+    - Tôi cần tìm [Món khai vị](category_name) trong nhà hàng
+    - Bạn có món trong danh mục [Đồ uống](category_name) không
+    - Hãy cho tôi xem các [Món tráng miệng](category_name)
+    - Tôi muốn xem các món trong danh mục [Món gọi thêm](category_name)
+    - Bạn có [Mẹt Cuốn](category_name) không
+    - Hãy giới thiệu món trong danh mục [Lẩu](category_name)
+    - Có món trong danh mục [Món chính](category_name) không
+    - Tôi muốn xem các món trong danh mục [Món khai vị](category_name)
+    - Bạn có [Đồ uống](category_name) nào không
+    - Hãy cho tôi xem các món trong danh mục [Món tráng miệng](category_name)
+    - Tôi đang tìm [Món gọi thêm](category_name) trong quán
+    - Bạn có món [Mẹt Cuốn](category_name) không
+    - Tôi muốn xem các món trong danh mục [Lẩu](category_name)
+    - Có món trong danh mục [Món chính](category_name) không
+    - Tôi cần tìm món trong danh mục [Món khai vị](category_name)
+    - Bạn có món trong danh mục [Đồ uống](category_name) không
+    - Cho tôi xem các món trong danh mục [Món tráng miệng](category_name)
+    - Tôi đang tìm món trong danh mục [Món gọi thêm](category_name)
+    - Có món nào trong danh mục [Mẹt Cuốn](category_name) không
+    - Tôi muốn biết về các món trong danh mục [Lẩu](category_name)
+    - Hãy cho tôi biết trong danh mục [Món chính](category_name)
+    - Bạn có món khai vị nào trong danh mục [Món khai vị](category_name) không
+    - Tôi đang tìm món trong danh mục [Đồ uống](category_name)
+    - Có món nào trong danh mục [Món tráng miệng](category_name) không
+    - Có món gọi thêm trong danh mục [Món gọi thêm](category_name) không
+    - Tôi muốn tìm món trong danh mục [Mẹt Cuốn](category_name)
+    - Tôi muốn mua món trong danh mục [Lẩu](category_name)
+    - Tôi muốn xem các món trong danh mục [Món chính](category_name)
+    - Bạn có món trong danh mục [Món khai vị](category_name) không
+    - Có món trong danh mục [Đồ uống](category_name) không
+    - Tôi muốn tìm các món trong danh mục [Món tráng miệng](category_name)
+    - Cho tôi xem món [Món gọi thêm](category_name)
+    - Tôi cần món [Mẹt Cuốn](category_name)
+
+- intent: find_dishes_by_price_range
+  examples: |
+    - Tôi muốn xem các món [lẩu](dish_name) có giá từ [0](from_price) đến [50000](to_price)
+    - Cho tôi xem các món [gỏi](dish_name) trong khoảng giá [10000](from_price) đến [300000](to_price)
+    - Tìm các món [cơm](dish_name) có giá từ [20000](from_price) đến [100000](to_price)
+    - Bạn có món [mì](dish_name) nào có giá từ [0](from_price) đến [20000](to_price) không
+    - Liệt kê các món [cháo](dish_name) có giá trong khoảng từ [5000](from_price) đến [150000](to_price)
+    - Hãy tìm các món [bánh](dish_name) có giá từ [0](from_price) đến [10000](to_price)
+    - Cho tôi các món [nước](dish_name) có giá trị từ [10000](from_price) trở lên
+    - Tôi muốn tìm các món [salad](dish_name) trong khoảng giá [10000](from_price) đến [100000](to_price)
+    - Bạn có món [kem](dish_name) nào có giá từ [0](from_price) đến [200000](to_price)
+    - Tôi muốn tìm món [chè](dish_name) có giá từ [10000](from_price) đến [100000](to_price)
+    - Hiển thị các món [trà](dish_name) có giá từ [0](from_price) đến [100000](to_price)
+    - Tìm các món [bún](dish_name) có giá từ [5000](from_price) đến [30000](to_price)
+    - Bạn có món [hủ tiếu](dish_name) nào có giá từ [10000](from_price) đến [20000](to_price)
+    - Cho tôi danh sách món [pad thái](dish_name) có giá trong khoảng [0](from_price) đến [500000](to_price)
+    - Hiển thị các món [cà ri](dish_name) có giá từ [20000](from_price) đến [2000000](to_price)
+    - Tôi muốn tìm món [nấm](dish_name) có giá từ [5000](from_price) đến [50000](to_price)
+    - Tìm món [đậu](dish_name) với giá trong khoảng từ [10000](from_price) đến [50000](to_price)
+    - Liệt kê các món [rau](dish_name) có giá từ [20000](from_price) đến [30000](to_price)
+    - Cho tôi xem các món [soup](dish_name) có giá từ [3000](from_price) trở lên
+    - Tìm các món [canh](dish_name) có giá trị từ [0](from_price) đến [20000](to_price)
+    - Bạn có món [bánh mì](dish_name) nào có giá từ [0](from_price) đến [10000](to_price) không
+    - Hiển thị tất cả món [nước ép](dish_name) có giá từ [10000](from_price) đến [1000000](to_price)
+    - Tôi muốn xem các món [cơm niêu](dish_name) có giá từ [10000](from_price) đến [20000](to_price)
+    - Liệt kê món [mì ý](dish_name) trong khoảng giá từ [0](from_price) đến [20000](to_price)
+    - Cho tôi xem các món [lẩu thái](dish_name) có giá từ [10000](from_price) đến [50000](to_price)
+    - Tìm món [bánh xèo](dish_name) trong khoảng giá từ [5000](from_price) đến [10000](to_price)
+    - Bạn có món [gỏi ngó sen](dish_name) nào giá từ [10000](from_price) đến [50000](to_price) không
+    - Liệt kê tất cả món [salad trái cây](dish_name) có giá từ [0](from_price) đến [2000](to_price)
+    - Tôi muốn tìm món [nem cuốn](dish_name) có giá từ [30000](from_price) đến [50000](to_price)
+    - Hãy cho tôi xem món [tiramisu](dish_name) có giá từ [20000](from_price) đến [50000](to_price)
+    - Bạn có món [chè hạt sen](dish_name) nào có giá từ [10000](from_price) đến [5000](to_price) không
+    - Liệt kê các món [bún bò huế](dish_name) trong khoảng giá từ [1000](from_price) đến [3000000](to_price)
+    - Tôi muốn tìm món [cơm tấm](dish_name) có giá từ [300000](from_price) đến [50000](to_price)
+    - Bạn có món [lẩu chao](dish_name) trong khoảng giá từ [0](from_price) đến [100000](to_price)
+    - Hiển thị các món [trà ô long](dish_name) có giá từ [500](from_price) đến [20000](to_price)
+    - Cho tôi xem món [cà phê](dish_name) có giá từ [2000](from_price) đến [5000000](to_price)
+    - Liệt kê các món [bánh flan](dish_name) trong khoảng giá [10](from_price) đến [5000](to_price)
+    - Tìm các món [khoai lang](dish_name) có giá từ [0](from_price) đến [10000](to_price)
+    - Bạn có món [nước suối](dish_name) nào có giá từ [1000](from_price) đến [1000](to_price) không
+    - Tìm món [lẩu thập cẩm](dish_name) có giá từ [5000](from_price) đến [2000](to_price)
+
+
+# =========================
+# 7. GỢI Ý MÓN
+# =========================
+
+- intent: suggest_food
+  examples: |
+    - đi nhóm nên gọi gì
+    - món nào ngon
+    - nên ăn gì
+    - món nào đáng thử
+    - gợi ý món ngon
+    - nên ăn gì
+    - đi 2 người nên ăn gì
+    - đi 3 người nên ăn gì
+    - đi theo nhóm nên gọi món gì
+    - đi nhóm nên gọi gì
+    - đi gia đình nên gọi gì
+    - combo nào hợp lý
+    - combo nào tiết kiệm
+    - combo nào ngon
+    - các combo tại nhà hàng
+    - các combo cho gia đình
+    - các combo cho nhóm bạn
+    - nên gọi combo gì tại nhà hàng
+    - gợi ý món cho nhóm 4 người
+    - nên ăn món gì khi đi 2 người
+    - combo tiết kiệm cho 3 người
+    - combo ngon cho gia đình
+    - đi 5 người nên gọi món nào
+    - món nào hợp cho nhóm bạn
+    - nên chọn combo nào hôm nay
+    - gợi ý món ăn cho cặp đôi
+    - combo trưa nên gọi gì
+    - combo tối cho 4 người
+    - gọi combo gì cho nhóm 6 người
+    - ăn cùng gia đình nên chọn gì
+    - combo ăn no cho nhóm
+    - combo cho nhóm sinh viên
+    - món ăn nhóm bạn nên thử
+    - món ăn gia đình nên chọn
+    - gọi combo cho 2 người
+    - món ngon hôm nay nên thử gì
+    - combo đặc biệt của nhà hàng
+    - đi nhóm đông nên ăn gì
+    - combo phù hợp cho trẻ em
+    - combo tiết kiệm cho nhóm
+    - combo ăn trưa nhanh
+    - combo tối đa 500k cho 4 người
+    - gợi ý combo chay
+    - gợi ý combo mix món
+    - món ăn ngon cho nhóm 3-5 người
+    - combo gia đình gồm những gì
+    - combo nhóm bạn được ưa thích
+    - chọn combo nào hợp lý nhất
+
+- intent: ask_dish_specialty
+  examples: |
+    - Món đặc trưng của nhà hàng là gì
+    - Bạn có thể cho tôi biết món best-seller không
+    - Đặc sản của quán là món gì
+    - Bạn có thể giới thiệu cho tôi món signature không
+    - Bạn có thể cung cấp tên món đặc trưng không
+    - Có thông tin nào về món best-seller không
+    - món nào bán chạy nhất
+    - các món nổi bật của nhà hàng
+    - các món đặc trưng của nhà hàng
+    - top các món được ăn nhiều nhất
+    - món nào được ăn nhiều nhất ở đây
+    - món nổi bật nhất của nhà hàng là gì
+    - bạn có thể giới thiệu món ăn đặc trưng không
+    - món signature bán chạy nhất
+    - món best-seller của quán là gì
+    - đặc sản được nhiều người yêu thích
+    - các món nổi bật nhất tại nhà hàng
+    - món nào đặc biệt nhất
+    - món được khách ưa chuộng nhất
+    - top món ăn tại Hương Sen
+    - món ăn ăn nhiều nhất trong tuần
+    - món ăn được đánh giá cao nhất
+    - món ăn nổi bật cho khách mới
+    - món ngon đặc trưng của quán
+    - món ăn không thể bỏ qua
+    - món signature nổi tiếng
+    - các món bán chạy nhất tại Hương Sen
+    - món ăn đặc trưng cho gia đình
+    - món ăn nổi bật theo mùa
+    - món ăn đặc sắc nhất
+    - món ăn được yêu thích nhất hiện nay
+    - top món được gọi nhiều nhất
+    - món signature chay
+    - món ăn đặc trưng cho nhóm bạn
+    - món best-seller cho 2 người
+    - món nổi bật trong thực đơn
+    - món đặc trưng cho bữa trưa
+    - món ăn nổi bật của tuần này
+    - món ăn đặc trưng chay
+    - món ăn nổi tiếng nhất tại quán
+    - món ăn được nhiều khách giới thiệu
+
+
+
+# =========================
+# 8. NGUYÊN LIỆU
+# =========================
+
+- intent: ask_food_ingredient
+  examples: |
+    - nguyên liệu có thuần chay không
+    - có thuần chay không
+    - có trứng không
+    - có sữa từ động vật không
+    - có tốt cho sức khỏe không
+    - nguyên liệu món ăn có xuất xứ từ đâu
+    - các món chay ở đây dùng nguyên liệu gì
+    - món này có nguồn gốc từ đâu
+    - rau củ nhà hàng lấy từ vùng nào
+    - nấm dùng trong món là loại nào
+    - nguyên liệu có phải hàng organic không
+    - đậu hũ nhà hàng tự làm hay mua ngoài
+    - món này có phải đặc sản vùng miền không
+    - tôi muốn biết nguồn gốc nước dùng lẩu
+    - gia vị món ăn có nhập khẩu không
+    - nguyên liệu có đạt chuẩn an toàn không
+    - món chay này có nguồn gốc rõ ràng không
+    - rau sống nhà hàng trồng hay mua
+    - tôi muốn biết xuất xứ hạt sen
+    - nấm mối trong món lấy từ đâu
+    - nguyên liệu có phải hàng nội địa không
+    - món này có phải chuẩn chay thuần không
+    - tôi cần biết nguồn gốc bột làm bánh
+    - dầu ăn nhà hàng dùng loại nào
+    - nguyên liệu có chứng nhận hữu cơ không
+    - món lẩu dùng nước dùng từ gì
+    - tôi muốn biết xuất xứ trà ô long
+    - nguyên liệu có phải hàng tươi mỗi ngày không
+    - món này có phải đặc sản chùa không
+    - tôi cần biết nguồn gốc yến trong chè
+    - rau củ có phải trồng tại vườn không
+    - nguyên liệu có qua kiểm định không
+    - món chay này có nguồn gốc thực vật 100% không
+    - tôi muốn biết xuất xứ cà ri
+    - gia vị có phải hàng thuần chay không
+    - nguyên liệu có phải nhập từ Đà Lạt không
+    - tôi cần biết nguồn gốc nước mắm chay
+    - món này có phải công thức gia truyền không
+    - nguyên liệu có phải hàng tươi mới mỗi ngày không
+    - tôi muốn biết xuất xứ bánh flan
+    - rau thơm nhà hàng dùng loại nào
+    - nguyên liệu có phải hàng tươi sống không
+    - món này có phải chuẩn vị Huế không
+    - tôi cần biết nguồn gốc sữa chua
+    - nguyên liệu có phải hàng không biến đổi gen không
+
+- intent: ask_serving_time
+  examples: |
+    - thời gian lên món là bao lâu
+    - khi nào tôi sẽ được phục vụ
+    - mất bao nhiêu thời gian để chế biến món
+    - nhà hàng phục vụ món trong bao lâu
+    - tôi có thể nhận món trong 15 phút không
+    - đơn món của tôi khi nào sẽ ra
+    - thời gian chờ món trung bình là bao lâu
+    - khi nào món của tôi sẽ được mang tới
+    - bao lâu thì tôi có thể thưởng thức món
+    - cần bao nhiêu thời gian để bếp hoàn tất
+    - có phục vụ món nhanh không
+    - nhà hàng có lên món lẹ không
+    - thời gian chế biến cho lẩu là bao lâu
+    - lên món khai vị mất bao lâu
+    - món chính chờ bao lâu
+    - bao nhiêu phút thì món sẽ tới bàn
+    - khi nào tôi có thể ăn khi gọi món
+    - thời gian xử lí và lên món là bao lâu
+    - có thể biết thời gian cụ thể lên món không
+    - món tráng miệng chờ lâu không
+    - thời gian nấu lẩu thái là bao nhiêu
+    - tôi cần món gấp có được không
+    - nhà hàng có báo trước giờ lên món không
+    - món chay chế biến có lâu không
+    - thời gian phục vụ tiệc là bao lâu
+    - thời gian chờ bánh xèo là bao nhiêu
+    - tôi muốn biết giờ phục vụ chính xác
+    - nhà hàng có cam kết thời gian lên món không
+    - món gọi thêm chờ bao lâu
+    - thời gian phục vụ đồ uống là bao nhiêu
+    - chờ món lâu không
+    - bao lâu thì có món
+
+
+# =========================
+# 9. KHUYẾN MÃI
+# =========================
+
+- intent: ask_promotion
+  examples: |
+    - có khuyến mãi không
+    - có giảm giá không
+    - có voucher không
+    - có ưu đãi gì
+    - mã giảm giá của nhà hàng gồm
+    - các mã giảm giá hiện có
+    - khuyến mãi gồm những gì
+    - các chương trình khuyến mãi hiện có
+    - nhà hàng đang có ưu đãi gì
+    - có tặng đồ uống miễn phí không
+    - có khuyến mãi cho nhóm không
+    - giảm giá món nào trong tuần này
+    - ưu đãi đặc biệt hôm nay
+    - có combo khuyến mãi không
+    - chương trình khuyến mãi cho khách mới
+    - voucher còn hiệu lực không
+    - có khuyến mãi cuối tuần không
+    - ưu đãi tháng này gồm gì
+    - có deal nào đặc biệt không
+    - giảm giá cho sinh nhật không
+    - mã FREEDRINK còn dùng được không
+    - mã FAMILY vẫn áp dụng không
+    - khuyến mãi đồ chay thứ 3 còn không
+    - có ưu đãi cho đặt bàn online không
+    - chương trình giảm giá hiện tại là gì
+    - combo trưa có khuyến mãi không
+    - tặng quà gì khi đặt món
+    - giảm giá theo số lượng khách
+    - chương trình cuối tháng là gì
+    - các ưu đãi mới trên fanpage
+    - hôm nay có khuyến mãi gì không
+    - ưu đãi đang chạy gồm những món nào
+    - giảm giá theo món ăn nào
+    - voucher mới nhất là gì
+    - chương trình khuyến mãi hiện tại
+    - deal đặc biệt hôm nay
+    - các món đang được giảm giá
+    - có ưu đãi đặt bàn trước không
+    - có ưu đãi gì hôm nay
+    - có chương trình giảm giá không
+
+# # =========================
+# # 10. FEEDBACK
+# # =========================
+
+- intent: feedback
+  examples: |
+    - Món ăn rất ngon
+    - Phục vụ chuyên nghiệp
+    - Giá hợp lý
+    - Nhân viên nhiệt tình
+    - Không gian thoải mái
+    - Đồ uống ngon
+    - Trải nghiệm rất vừa ý
+    - Trang trí món ăn đẹp
+    - Menu đa dạng
+    - Nhân viên thân thiện, nhiệt tình
+    - Tôi hài lòng với dịch vụ
+    - Tôi thích không gian quán
+    - Đồ ăn ngon, sẽ quay lại
+    - Nhân viên niềm nở
+    - Ghế ngồi êm, không gian mát mẻ
+    - Quán hơi đông
+    - Nhân viên chậm
+    - Đồ ăn không hợp khẩu vị
+    - Không hài lòng
+    - Món ăn hơi mặn
+    - Quán làm tôi thất vọng
+    - Trải nghiệm khá thất vọng
+    - Món chưa được nóng
+    - Trải nghiệm rất tệ
+    - Đồ ăn hơi nguội
+    - Không có chỗ để xe
+    - Cần cải thiện vệ sinh
+    - Món ăn ngon nhưng hơi đắt
+    - Không hài lòng về thái độ nhân viên
+    - Món ăn chưa ngon lắm
+    - Phục vụ hơi chậm
+    - Món hơi mặn so với khẩu vị
+    - Tôi không hài lòng về dịch vụ
+    - Ghế cứng, khó chịu, nhà hàng có mùi hôi
+    - Món ăn không ngon
+    - Món ăn dở tệ
+    - Không gian quán ồn quá
+    - Món ăn không đạt tiêu chuẩn
+    - Nhân viên phục vụ thiếu nhiệt tình
+    - Thức ăn không đúng như mô tả trên menu
+    
+
+
+  

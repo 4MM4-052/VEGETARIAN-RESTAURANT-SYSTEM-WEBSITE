@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Python virtual environments
+venv/
+env/
+.venv/
+rasa_env/
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rasa
+.rasa/
+**/.rasa/
+
+# Rasa generated models
+**/models/*.tar.gz
+
+# Rasa test/results generated files
+**/results/

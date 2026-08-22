@@ -1,0 +1,242 @@
+product_id,product_name,day_of_week,hour
+12,Bánh Flan Kiểu Pháp,3,9
+12,Bánh Flan Kiểu Pháp,6,13
+12,Bánh Flan Kiểu Pháp,6,15
+14,Tiramisu Trà Xanh,4,11
+16,Cơm Chiên Thảo Mộc,2,9
+16,Cơm Chiên Thảo Mộc,4,9
+17,Bánh Kếp Sữa Chua Trái Cây,3,12
+17,Bánh Kếp Sữa Chua Trái Cây,7,10
+18,Kem Dừa Bến Tre,2,11
+18,Kem Dừa Bến Tre,2,20
+18,Kem Dừa Bến Tre,3,12
+18,Kem Dừa Bến Tre,5,10
+18,Kem Dừa Bến Tre,5,15
+18,Kem Dừa Bến Tre,6,11
+18,Kem Dừa Bến Tre,6,15
+19,Gỏi Nấm Sốt Thái,3,9
+19,Gỏi Nấm Sốt Thái,3,16
+19,Gỏi Nấm Sốt Thái,4,9
+19,Gỏi Nấm Sốt Thái,4,11
+19,Gỏi Nấm Sốt Thái,4,12
+19,Gỏi Nấm Sốt Thái,5,10
+20,Gỏi Ngó Sen Sốt Chua Ngọt,2,20
+20,Gỏi Ngó Sen Sốt Chua Ngọt,3,12
+20,Gỏi Ngó Sen Sốt Chua Ngọt,4,9
+20,Gỏi Ngó Sen Sốt Chua Ngọt,4,12
+20,Gỏi Ngó Sen Sốt Chua Ngọt,5,10
+20,Gỏi Ngó Sen Sốt Chua Ngọt,6,15
+21,Trà Tắc Xí Muội ,2,20
+21,Trà Tắc Xí Muội ,3,12
+21,Trà Tắc Xí Muội ,3,16
+21,Trà Tắc Xí Muội ,4,9
+21,Trà Tắc Xí Muội ,4,11
+22,Trà Ô Long Tiên Tử,1,19
+22,Trà Ô Long Tiên Tử,2,11
+22,Trà Ô Long Tiên Tử,2,20
+22,Trà Ô Long Tiên Tử,3,9
+22,Trà Ô Long Tiên Tử,3,12
+22,Trà Ô Long Tiên Tử,3,16
+22,Trà Ô Long Tiên Tử,4,9
+22,Trà Ô Long Tiên Tử,4,11
+22,Trà Ô Long Tiên Tử,4,16
+22,Trà Ô Long Tiên Tử,6,15
+23,Bạc Sỉu ,1,19
+23,Bạc Sỉu ,4,9
+23,Bạc Sỉu ,4,16
+23,Bạc Sỉu ,6,15
+24,Cafe Đen,2,11
+24,Cafe Đen,4,9
+24,Cafe Đen,4,11
+24,Cafe Đen,4,12
+24,Cafe Đen,4,16
+24,Cafe Đen,5,10
+24,Cafe Đen,6,15
+25, Trà Cam Quế Long Nhãn,2,11
+25, Trà Cam Quế Long Nhãn,2,20
+25, Trà Cam Quế Long Nhãn,4,9
+25, Trà Cam Quế Long Nhãn,4,11
+25, Trà Cam Quế Long Nhãn,4,12
+25, Trà Cam Quế Long Nhãn,4,16
+25, Trà Cam Quế Long Nhãn,5,10
+25, Trà Cam Quế Long Nhãn,5,15
+25, Trà Cam Quế Long Nhãn,6,13
+26,Nước Ép Dưa Hấu,2,9
+26,Nước Ép Dưa Hấu,3,9
+26,Nước Ép Dưa Hấu,4,9
+26,Nước Ép Dưa Hấu,4,11
+26,Nước Ép Dưa Hấu,4,12
+26,Nước Ép Dưa Hấu,5,11
+26,Nước Ép Dưa Hấu,6,11
+26,Nước Ép Dưa Hấu,7,10
+27,Cơm Chiên Cốm Sen,3,12
+27,Cơm Chiên Cốm Sen,4,9
+28,Cơm Niêu,2,20
+28,Cơm Niêu,3,12
+28,Cơm Niêu,4,9
+28,Cơm Niêu,4,11
+29,Cơm Tấm Sườn Bì Chả Chay,1,19
+29,Cơm Tấm Sườn Bì Chả Chay,2,11
+29,Cơm Tấm Sườn Bì Chả Chay,3,9
+29,Cơm Tấm Sườn Bì Chả Chay,3,16
+29,Cơm Tấm Sườn Bì Chả Chay,4,9
+29,Cơm Tấm Sườn Bì Chả Chay,5,15
+29,Cơm Tấm Sườn Bì Chả Chay,6,11
+32,Mì Ý Sốt Kem,1,19
+32,Mì Ý Sốt Kem,2,20
+32,Mì Ý Sốt Kem,4,11
+37,Salad Trái Cây,3,12
+37,Salad Trái Cây,4,9
+37,Salad Trái Cây,4,11
+37,Salad Trái Cây,4,12
+37,Salad Trái Cây,4,16
+38,Salad Khoai Tây Bắp,2,9
+38,Salad Khoai Tây Bắp,2,20
+38,Salad Khoai Tây Bắp,4,9
+38,Salad Khoai Tây Bắp,4,12
+38,Salad Khoai Tây Bắp,4,16
+38,Salad Khoai Tây Bắp,5,15
+38,Salad Khoai Tây Bắp,6,11
+38,Salad Khoai Tây Bắp,6,13
+38,Salad Khoai Tây Bắp,6,15
+38,Salad Khoai Tây Bắp,7,10
+39,Bì Cuốn,3,9
+39,Bì Cuốn,4,9
+39,Bì Cuốn,4,12
+39,Bì Cuốn,4,16
+39,Bì Cuốn,6,11
+39,Bì Cuốn,6,15
+39,Bì Cuốn,7,13
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,3,9
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,3,16
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,4,11
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,4,12
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,4,16
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,5,11
+40,Tàu Hủ Ky Cuốn Kiểu Bắc Kinh,6,15
+41,Chè Hạt Sen Tuyết Yến,2,11
+41,Chè Hạt Sen Tuyết Yến,4,9
+42,Dương Chi Cam Lộ,4,9
+42,Dương Chi Cam Lộ,5,11
+43,COCA/ FANTA CAM/ SPRITE/ SODA,3,9
+43,COCA/ FANTA CAM/ SPRITE/ SODA,4,12
+43,COCA/ FANTA CAM/ SPRITE/ SODA,7,13
+44,Nước Suối Dasani,3,9
+44,Nước Suối Dasani,4,12
+44,Nước Suối Dasani,5,11
+44,Nước Suối Dasani,6,11
+44,Nước Suối Dasani,6,15
+45,Hủ Tiếu Khô,4,16
+45,Hủ Tiếu Khô,5,10
+48,Pad Thái,4,11
+48,Pad Thái,4,12
+48,Pad Thái,4,16
+52,Bún Bò Huế ,4,9
+52,Bún Bò Huế ,4,12
+52,Bún Bò Huế ,4,16
+52,Bún Bò Huế ,5,10
+52,Bún Bò Huế ,7,10
+53,Cà Ri Nấm,4,9
+53,Cà Ri Nấm,4,11
+53,Cà Ri Nấm,4,12
+53,Cà Ri Nấm,4,16
+53,Cà Ri Nấm,6,11
+53,Cà Ri Nấm,6,13
+53,Cà Ri Nấm,6,15
+54,Nấm Mối Sốt Hoàng Kim,4,9
+54,Nấm Mối Sốt Hoàng Kim,4,12
+54,Nấm Mối Sốt Hoàng Kim,6,15
+56,Bánh Mì Thêm,6,15
+60,Rau Củ Luộc ,2,11
+60,Rau Củ Luộc ,6,11
+60,Rau Củ Luộc ,6,13
+60,Rau Củ Luộc ,6,15
+62,Bún Thêm,2,11
+62,Bún Thêm,4,9
+62,Bún Thêm,7,10
+63,Soup Bắp Cải Cuộn,4,9
+63,Soup Bắp Cải Cuộn,6,13
+64,Canh Chua Ngó Sen,4,9
+64,Canh Chua Ngó Sen,6,11
+66,Lẩu Thập Cẩm,5,11
+68,Lẩu Chao,2,11
+68,Lẩu Chao,5,10
+77,Khoai Lang Chiên Giòn,1,14
+77,Khoai Lang Chiên Giòn,4,9
+77,Khoai Lang Chiên Giòn,5,11
+79,Mì Quảng,1,14
+79,Mì Quảng,3,9
+79,Mì Quảng,4,11
+79,Mì Quảng,4,12
+79,Mì Quảng,6,15
+79,Mì Quảng,7,13
+80,Pate Nấm Bông Cải Xanh Sốt ,3,9
+80,Pate Nấm Bông Cải Xanh Sốt ,4,11
+80,Pate Nấm Bông Cải Xanh Sốt ,4,12
+80,Pate Nấm Bông Cải Xanh Sốt ,5,11
+80,Pate Nấm Bông Cải Xanh Sốt ,6,15
+82,Bánh Mì Bơ Tỏi,2,11
+82,Bánh Mì Bơ Tỏi,4,9
+82,Bánh Mì Bơ Tỏi,7,13
+376,Chả giò chay,4,9
+377,Đậu hũ chiên giòn,3,9
+379,Khoai tây chiên,4,16
+380,Xúc xích chay,4,16
+381,Chả đậu xanh lá lốt,3,9
+381,Chả đậu xanh lá lốt,3,12
+381,Chả đậu xanh lá lốt,3,16
+381,Chả đậu xanh lá lốt,4,16
+381,Chả đậu xanh lá lốt,6,15
+382,Nem chua chay,3,12
+382,Nem chua chay,4,16
+383,Hạt dẻ rang chay,3,16
+383,Hạt dẻ rang chay,4,9
+383,Hạt dẻ rang chay,4,16
+383,Hạt dẻ rang chay,5,10
+384,Khoai lang chiên mật ong,4,9
+384,Khoai lang chiên mật ong,4,11
+384,Khoai lang chiên mật ong,4,12
+384,Khoai lang chiên mật ong,5,10
+385,Snack rong nho chay,2,9
+385,Snack rong nho chay,3,9
+385,Snack rong nho chay,4,11
+385,Snack rong nho chay,4,12
+386,Snack rong biển chay,2,20
+386,Snack rong biển chay,4,11
+386,Snack rong biển chay,4,12
+387,Cà tím nướng mỡ hành,3,9
+387,Cà tím nướng mỡ hành,3,16
+387,Cà tím nướng mỡ hành,4,11
+387,Cà tím nướng mỡ hành,4,12
+388,Cà rốt nướng mật ong và hạt điều,3,9
+388,Cà rốt nướng mật ong và hạt điều,4,11
+388,Cà rốt nướng mật ong và hạt điều,4,12
+388,Cà rốt nướng mật ong và hạt điều,6,15
+426,Xoài dầm nước cốt dừa,4,11
+427,Thạch rau câu hoa đậu biếc,3,12
+428,Bánh mochi nhân đậu đỏ,3,12
+430,Bánh khoai môn hấp cốt dừa,4,16
+431,Kem trái cây sữa chua hạt điều,3,16
+431,Kem trái cây sữa chua hạt điều,4,11
+431,Kem trái cây sữa chua hạt điều,4,16
+432,Kem xoài sữa chua Hy Lạp ,4,12
+432,Kem xoài sữa chua Hy Lạp ,4,16
+432,Kem xoài sữa chua Hy Lạp ,5,10
+433,Kem bơ sữa chua không đường,3,9
+433,Kem bơ sữa chua không đường,3,16
+433,Kem bơ sữa chua không đường,4,9
+433,Kem bơ sữa chua không đường,4,12
+433,Kem bơ sữa chua không đường,4,16
+433,Kem bơ sữa chua không đường,5,10
+434,Xoài lắc muối ớt chay,2,9
+434,Xoài lắc muối ớt chay,4,9
+434,Xoài lắc muối ớt chay,4,12
+435,Dâu tây phủ socola đen,4,9
+435,Dâu tây phủ socola đen,4,11
+435,Dâu tây phủ socola đen,4,12
+436,Thạch nha đam trái cây,2,20
+436,Thạch nha đam trái cây,3,9
+436,Thạch nha đam trái cây,4,12
+437,Trái cây ngào đường,3,9
+437,Trái cây ngào đường,4,11
+437,Trái cây ngào đường,4,12
