@@ -42,3 +42,5 @@ Thumbs.db
 # Rasa test/results generated files
 **/results/
 Server/src/python/phobert_phrase_crf.pt
+
+*.pt
